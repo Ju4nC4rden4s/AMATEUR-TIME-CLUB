@@ -1,0 +1,39 @@
+<!-- pago.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Instrucciones de pago</title>
+  <style>
+    body { font-family: sans-serif; padding: 30px; max-width: 600px; margin: auto; text-align: center; }
+    .pago-box { border: 1px solid #ccc; padding: 24px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h2 { color: #25d366; }
+    .numero { font-size: 24px; font-weight: bold; margin: 12px 0; }
+    .plan { font-size: 20px; margin: 8px 0; }
+    .btn { background: #25d366; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; margin-top: 20px; }
+    .btn:hover { background: #20ba5a; }
+  </style>
+</head>
+<body>
+  <div class="pago-box">
+    <h2>Realiza tu pago</h2>
+    <p>Consigna el valor del plan seleccionado a:</p>
+    <div class="numero">302 422 1645</div>
+    <div id="medio">Nequi o Daviplata</div>
+    <div id="monto" class="plan">Monto: </div>
+
+    <p>Una vez realices el pago, por favor envía el comprobante vía WhatsApp.</p>
+    <a href="https://wa.me/573024221645" class="btn">Enviar comprobante</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const monto = params.get("monto");
+    const plan = params.get("plan");
+
+    if (monto && plan) {
+      document.getElementById("monto").textContent = "Monto: $" + monto + " (" + plan + ")";
+    }
+  </script>
+</body>
+</html>
