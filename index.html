@@ -1,0 +1,333 @@
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573024221645" class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width: 48px; height: 48px;">
+</a>
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  background: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  transition: box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-float:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+  background: #20ba5a;
+}
+.whatsapp-float img {
+  filter: invert(1);
+}
+</style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Club Amateur - Academia de Artes Marciales Mixtas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="encabezado-contenido">
+      <img class="logo-encabezado" src="imagenes/logo-academia.jpg" alt="Logo Club Amateur">
+      <div class="encabezado-texto">
+      <h1>Club Amateur</h1>
+      <p>Academia de Artes Marciales Mixtas</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#quienes-somos">Quiénes Somos</a>
+    <a href="#servicios">Nuestros Programas</a>
+    <a href="#planes">Planes y Tarifas</a>
+    <a href="#inscripcion">Inscripción</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="quienes-somos" class="centrado">
+  <h2>Quiénes Somos</h2>
+  <p>
+    En <strong>Club Amateur</strong> somos una academia apasionada por las artes marciales mixtas. Nos dedicamos a formar no solo deportistas, sino personas íntegras, con disciplina, respeto y fortaleza mental. Ofrecemos un ambiente inclusivo y motivador para que cada alumno, sin importar su experiencia, pueda alcanzar su máximo potencial.
+  </p>
+
+  <div class="mision-vision">
+    <div class="mision">
+      <h3>Misión</h3>
+      <p>
+        Brindar formación integral en artes marciales mixtas a través de entrenamiento físico, mental y técnico, fomentando valores como la disciplina, la perseverancia y el respeto.
+      </p>
+    </div>
+    <div class="vision">
+      <h3>Visión</h3>
+      <p>
+        Ser reconocidos como una de las academias líderes en la formación de atletas y ciudadanos ejemplares en Colombia, promoviendo el deporte como herramienta de transformación personal y social.
+      </p>
+    </div>
+  </div>
+    <!-- Imágenes de referencia debajo de Misión y Visión -->
+    <div class="imagenes-referencia" style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 32px;">
+      <img src="imagenes/referencia1.jpg" alt="Referencia 1" style="max-width: 340px; width: 100%; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
+      <img src="imagenes/referencia2.jpg" alt="Referencia 2" style="max-width: 340px; width: 100%; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
+    </div>
+</section>
+
+  <!-- SECCIÓN: Formulario de inscripción -->
+  <section id="inscripcion" class="centrado" style="display:none;">
+    <h2>Formulario de inscripción</h2>
+    <form id="form-inscripcion" style="max-width:400px; margin:20px auto; text-align:left;">
+      <label for="nombre-insc">Nombre:</label><br>
+      <input type="text" id="nombre-insc" name="nombre" required style="width:100%;margin-bottom:10px;"><br>
+
+      <label for="apellidos-insc">Apellidos:</label><br>
+      <input type="text" id="apellidos-insc" name="apellidos" required style="width:100%;margin-bottom:10px;"><br>
+
+      <label for="documento-insc">Documento de identidad:</label><br>
+      <input type="text" id="documento-insc" name="documento" required style="width:100%;margin-bottom:10px;"><br>
+
+      <label for="fecha-nac-insc">Fecha de nacimiento:</label><br>
+      <input type="date" id="fecha-nac-insc" name="fecha_nacimiento" required style="width:100%;margin-bottom:10px;"><br>
+
+      <label for="genero-insc">Género:</label><br>
+      <select id="genero-insc" name="genero" required style="width:100%;margin-bottom:10px;">
+        <option value="">Seleccione</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select><br>
+
+      <label for="telefono-insc">Teléfono:</label><br>
+      <input type="tel" id="telefono-insc" name="telefono" required style="width:100%;margin-bottom:10px;"><br>
+
+      <label for="correo-insc">Correo electrónico:</label><br>
+      <input type="email" id="correo-insc" name="correo" required style="width:100%;margin-bottom:10px;"><br>
+
+      <label for="direccion-insc">Dirección:</label><br>
+      <input type="text" id="direccion-insc" name="direccion" required style="width:100%;margin-bottom:15px;"><br>
+
+      <button type="submit" class="btn" style="width:100%;">Enviar inscripción</button>
+    </form>
+  </section>
+
+  <!-- NUEVA SECCIÓN: Selección de plan y pago -->
+  <section id="seleccion-plan" class="centrado" style="display:none;">
+    <h2>Selecciona tu plan y realiza el pago</h2>
+    <form id="form-plan" style="max-width:400px; margin:20px auto; text-align:left;">
+      <label for="plan">Elige el plan de tu interés:</label><br>
+      <select id="plan" name="plan" required style="width:100%;margin-bottom:15px;">
+        <option value="">Seleccione un plan</option>
+        <option value="basico">Plan Básico - 12 clases ($120.000)</option>
+        <option value="intermedio">Plan Intermedio - 16 clases ($160.000)</option>
+        <option value="ilimitado">Plan Ilimitado - 20 clases ($200.000)</option>
+        <option value="individual">Clase individual ($25.000)</option>
+      </select><br>
+      <!-- Aquí puedes integrar una pasarela real, por ahora es un ejemplo -->
+      <button type="submit" class="btn" style="width:100%;">Ir a pagar</button>
+    </form>
+    <div id="pago-link" style="display:none; margin-top:20px;">
+      <p>Haz clic en el siguiente enlace para completar tu pago:</p>
+      <a id="enlace-pago" href="#" target="_blank" class="btn" style="background:#25d366;">Ir a pasarela de pagos</a>
+    </div>
+  </section>
+
+  <section id="servicios">
+  <div class="servicios-contenido" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 48px; margin-top: 32px;">
+    <!-- Columna izquierda: descripción, lista y multimedia -->
+    <div style="flex: 1 1 350px; min-width: 280px; max-width: 420px; display: flex; flex-direction: column; align-items: center;">
+      <h2 style="align-self: flex-start;">Nuestros Programas</h2>
+      <p style="text-align: left;">
+        En nuestra academia ofrecemos programas para todos los niveles, desde principiantes hasta atletas avanzados. Elige tu objetivo: mejorar tu condición física, aprender defensa personal o competir profesionalmente.
+      </p>
+      <ul style="display: block; text-align: left; list-style: none; padding-left: 0; font-size: 1.1em; margin-bottom: 18px;">
+        <li>• Acondicionamiento Físico</li>
+        <li>• Aumento de Masa Muscular</li>
+        <li>• Definición</li>
+        <li>• MMA</li>
+        <li>• Boxeo</li>
+        <li>• Kick Boxing</li>
+        <li>• Wrestling</li>
+        <li>• Jiujitsu</li>
+      </ul>
+      <img src="imagenes/entrenamiento.jpg" alt="Nuestros Programas" style="display:block; margin: 16px auto 8px auto; max-width: 260px; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
+      <video autoplay loop muted playsinline style="width:100%; max-width:340px; margin: 8px 0 0 0; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
+        <source src="videos/video1.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+      <button class="btn" style="margin-top: 18px; width: 100%;">¡Solicita una clase de prueba!</button>
+    </div>
+    <!-- Columna derecha: detalles de programas en grid -->
+    <div style="flex: 2 1 420px; min-width: 320px;">
+      <div class="programas-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px;">
+        <div class="programa">
+          <h3>Boxeo</h3>
+          <p>Desarrolla velocidad, técnica y resistencia con entrenamientos intensos y controlados.</p>
+        </div>
+        <div class="programa">
+          <h3>MMA</h3>
+          <p>Entrenamiento integral que combina striking, grappling y estrategia de combate.</p>
+        </div>
+        <div class="programa">
+          <h3>Kick Boxing</h3>
+          <p>Quema calorías y mejora tu coordinación con técnicas de pierna y puño.</p>
+        </div>
+        <div class="programa">
+          <h3>Wrestling</h3>
+          <p>Aprende derribos, control del oponente y técnicas de lucha olímpica.</p>
+        </div>
+        <div class="programa">
+          <h3>Acondicionamiento Físico</h3>
+          <p>Mejora tu resistencia cardiovascular, fuerza y agilidad con rutinas funcionales adaptadas a tu nivel.</p>
+        </div>
+        <div class="programa">
+          <h3>Jiujitsu</h3>
+          <p>Perfecciona tus habilidades de combate en el suelo, sumisiones y control del oponente con técnicas de Jiujitsu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planes" class="centrado" style="display:none;">
+  <h2>Planes y Tarifas</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 24px;">
+    <div style="flex: 1 1 320px; min-width: 280px; max-width: 400px;">
+      <p>Conoce nuestros planes flexibles y elige el que mejor se adapte a tus objetivos:</p>
+      <ul style="display: block; text-align: left; font-size: 1.1em; margin-bottom: 24px;">
+        <li><strong>Plan Básico:</strong> 12 clases al mes - $120.000/mes</li>
+        <li><strong>Plan Intermedio:</strong> 16 clases al mes - $160.000/mes</li>
+        <li><strong>Plan Ilimitado:</strong> 20 clases al mes - $200.000/mes</li>
+        <li><strong>Clase individual:</strong> $25.000</li>
+      </ul>
+      <p style="margin-top:20px; font-weight: 600;">¡Pregunta por nuestros descuentos para grupos y familiares!</p>
+    </div>
+    <div style="flex: 1 1 320px; min-width: 280px; max-width: 420px; display: flex; justify-content: center;">
+      <img src="imagenes/tarifas.jpg" alt="Tarifas Club Amateur" style="width:100%; max-width:400px; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+    </div>
+  </div>
+</section>
+
+  <section id="contacto" style="text-align: center;">
+    <h2>Contacto</h2>
+    <p>
+      Dirección: Ac. 153 # 96A - 10 Suba, Bogotá<br>
+      Teléfono: 302 422 1645<br>
+      Email: jhonnysuan_94@outlook.com
+    </p>
+    <div style="margin: 0 auto; max-width: 400px;">
+      <iframe
+        src="https://www.google.com/maps?q=Ac.+153+%23+96A+-+10,+Suba,+Bogotá&output=embed"
+        width="100%" height="250" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <h3 style="margin-top:30px;">Solicita una clase de prueba</h3>
+    <form id="form-clase-prueba" style="max-width:350px; margin:20px auto; text-align:left;">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required style="width:100%;margin-bottom:10px;"><br>
+      <label for="telefono">Teléfono:</label><br>
+      <input type="tel" id="telefono" name="telefono" required style="width:100%;margin-bottom:10px;"><br>
+      <label for="dia">Día:</label><br>
+      <input type="date" id="dia" name="dia" required style="width:100%;margin-bottom:10px;"><br>
+      <label for="hora">Hora:</label><br>
+      <input type="time" id="hora" name="hora" required style="width:100%;margin-bottom:15px;"><br>
+      <button type="submit" class="btn" style="width:100%;">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <footer>
+  &copy; 2025 Club Amateur. Todos los derechos reservados.
+  <p>Síguenos:</p>
+  <a href="https://instagram.com/" target="_blank">Instagram</a> |
+  <a href="https://facebook.com/" target="_blank">Facebook</a>
+</footer>
+
+  <script>
+    
+  // Espera a que el DOM esté listo
+  document.addEventListener("DOMContentLoaded", function() {
+    const secciones = ["quienes-somos", "servicios", "planes", "inscripcion", "seleccion-plan", "contacto"];
+    function mostrarSeccion(id) {
+      secciones.forEach(sec => {
+        const el = document.getElementById(sec);
+        if (el) el.style.display = (sec === id) ? "block" : "none";
+      });
+    }
+    // Mostrar solo la primera sección al cargar
+    mostrarSeccion("quienes-somos");
+    // Asignar eventos a los enlaces del menú
+    document.querySelectorAll("nav a").forEach(enlace => {
+      enlace.addEventListener("click", function(e) {
+        e.preventDefault();
+        const id = this.getAttribute("href").replace("#", "");
+        mostrarSeccion(id);
+        // Opcional: cambiar el hash en la URL
+        window.location.hash = id;
+      });
+    });
+    // Si hay hash en la URL, mostrar esa sección
+    if (window.location.hash) {
+      const hash = window.location.hash.replace("#", "");
+      if (secciones.includes(hash)) {
+        mostrarSeccion(hash);
+      }
+    }
+
+    // Interceptar envío del formulario de inscripción
+    document.getElementById("form-inscripcion").addEventListener("submit", function(e) {
+      e.preventDefault();
+      mostrarSeccion("seleccion-plan");
+    });
+
+    // Manejo del formulario de plan y pago
+    document.getElementById("form-plan").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const plan = document.getElementById("plan").value;
+      let monto = "";
+      let nombrePlan = document.getElementById("plan").options[document.getElementById("plan").selectedIndex].text;
+
+      if(plan === "basico") monto = "120000";
+      if(plan === "intermedio") monto = "160000";
+      if(plan === "ilimitado") monto = "200000";
+      if(plan === "individual") monto = "25000";
+
+      const url = `pagos.html?plan=${encodeURIComponent(nombrePlan)}&monto=${monto}`;
+      window.location.href = url;
+    });
+  });
+</script>
+
+<script>
+  // Mostrar formulario al dar click en "Solicita una clase de prueba"
+  document.addEventListener("DOMContentLoaded", function() {
+    const btns = document.querySelectorAll(".btn");
+    btns.forEach(btn => {
+      if (btn.textContent.includes("Solicita una clase de prueba")) {
+        btn.addEventListener("click", function(e) {
+          e.preventDefault();
+          // Mostrar la sección de contacto
+          document.getElementById("contacto").style.display = "block";
+          // Ocultar las demás secciones
+          ["quienes-somos", "servicios", "clases"].forEach(id => {
+            const sec = document.getElementById(id);
+            if (sec) sec.style.display = "none";
+          });
+          // Opcional: cambiar el hash en la URL
+          window.location.hash = "contacto";
+          // Hacer scroll al formulario
+          setTimeout(() => {
+            document.getElementById("form-clase-prueba").scrollIntoView({behavior: "smooth"});
+          }, 100);
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!-- pago.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Instrucciones de pago</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .pago-box {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      max-width: 420px;
+      margin: 60px auto 40px auto;
+      padding: 36px 28px 32px 28px;
+      text-align: center;
+    }
+    h2 {
+      color: #25d366;
+      font-size: 2em;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+    .numero {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 16px 0 8px 0;
+      color: #222;
+    }
+    .plan {
+      font-size: 1.15em;
+      margin: 12px 0 18px 0;
+      color: #444;
+    }
+    .btn {
+      background: #25d366;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 18px;
+      font-size: 1em;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #20ba5a;
+    }
+    .logo-encabezado {
+      max-height: 90px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (max-width: 600px) {
+      .pago-box {
+        padding: 18px 6vw 22px 6vw;
+        margin: 30px 0 20px 0;
+      }
+      .logo-encabezado {
+        max-height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align:center; margin-top:32px;">
+    <img class="logo-encabezado" src="imagenes/logo-academia.jpg" alt="Logo Club Amateur">
+    <h1 style="margin:0; font-size:1.7em; color:#111; font-weight:600;">Club Amateur</h1>
+    <p style="color:#555; margin-bottom:28px;">Academia de Artes Marciales Mixtas</p>
+  </div>
+  <div class="pago-box">
+    <h2>Realiza tu pago</h2>
+    <p>Consigna el valor del plan seleccionado a:</p>
+    <div class="numero">302 422 1645</div>
+    <div id="medio" style="color:#25d366; font-weight:600;">Nequi o Daviplata</div>
+    <div id="monto" class="plan">Monto: </div>
+
+    <p style="margin-top:18px;">Una vez realices el pago, por favor envía el comprobante vía WhatsApp.</p>
+    <a href="https://wa.me/573024221645" class="btn">Enviar comprobante</a>
+  </div>
+  <footer style="background:#000; color:#fff; text-align:center; padding:18px; border-radius:0 0 16px 16px; margin: 0 0 0 0;">
+    &copy; 2025 Club Amateur. Todos los derechos reservados.<br>
+    <span>Síguenos: </span>
+    <a href="https://instagram.com/" target="_blank" style="color:#fff; text-decoration:underline;">Instagram</a> |
+    <a href="https://facebook.com/" target="_blank" style="color:#fff; text-decoration:underline;">Facebook</a>
+  </footer>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const monto = params.get("monto");
+    const plan = params.get("plan");
+
+    if (monto && plan) {
+      document.getElementById("monto").textContent = "Monto: $" + monto + " (" + plan + ")";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Marca de agua */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../imagenes/logo-academia.png") no-repeat center center;
+  background-size: 400px auto;
+  opacity: 0.12; /* MÁS visible que antes */
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Header y navegación */
+header {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.encabezado-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.encabezado-texto {
+  text-align: left;
+}
+
+.logo-encabezado {
+  max-height: 120px;
+  width: auto;
+}
+
+nav {
+  background: #111;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #bbb;
+}
+
+/* Secciones */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+/* Botón */
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Imágenes */
+.img-banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Servicios */
+.servicios-contenido {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.servicios-lista {
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 350px;
+}
+
+.servicios-detalles {
+  flex: 2 1 400px;
+  min-width: 300px;
+}
+
+.servicios-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.servicios-imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.servicios-imagen img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.centrado {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.mision, .vision {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.programas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin: 0;
+}
+
+.programa {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.programa img {
+  max-width: 100%;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+.programa-titulo {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0 10px;
+}
+
+.programa-descripcion {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.programa-btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.programa-btn:hover {
+  background: #444;
+}
+
+.centrar-programa {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .encabezado-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-encabezado {
+    max-width: 80px;
+    margin: 0 0 15px 0;
+  }
+  
+  nav {
+    padding: 10px 0;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .servicios-contenido,
+  .mision-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios-texto,
+  .servicios-imagen,
+  .mision,
+  .vision {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
