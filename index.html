@@ -1,37 +1,19 @@
 <!-- Botón flotante de WhatsApp -->
 <a href="https://wa.me/573024221645" class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width: 48px; height: 48px;">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 60px; height: 60px;">
 </a>
-<style>
-.whatsapp-float {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  z-index: 999;
-  background: #25d366;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-  transition: box-shadow 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.whatsapp-float:hover {
-  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
-  background: #20ba5a;
-}
-.whatsapp-float img {
-  filter: invert(1);
-}
+
 </style>
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Club Amateur - Academia de Artes Marciales Mixtas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -52,31 +34,53 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <section id="quienes-somos" class="centrado">
+  <section id="quienes-somos" align="center"data-aos="fade-up" class="centrado">
   <h2>Quiénes Somos</h2>
   <p>
     En <strong>Club Amateur</strong> somos una academia apasionada por las artes marciales mixtas. Nos dedicamos a formar no solo deportistas, sino personas íntegras, con disciplina, respeto y fortaleza mental. Ofrecemos un ambiente inclusivo y motivador para que cada alumno, sin importar su experiencia, pueda alcanzar su máximo potencial.
   </p>
 
   <div class="mision-vision">
-    <div class="mision">
+    <div class="mision quienes-bloque">
       <h3>Misión</h3>
       <p>
         Brindar formación integral en artes marciales mixtas a través de entrenamiento físico, mental y técnico, fomentando valores como la disciplina, la perseverancia y el respeto.
       </p>
     </div>
-    <div class="vision">
+    <div class="vision quienes-bloque">
       <h3>Visión</h3>
       <p>
         Ser reconocidos como una de las academias líderes en la formación de atletas y ciudadanos ejemplares en Colombia, promoviendo el deporte como herramienta de transformación personal y social.
       </p>
     </div>
   </div>
-    <!-- Imágenes de referencia debajo de Misión y Visión -->
-    <div class="imagenes-referencia" style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 32px;">
-      <img src="imagenes/referencia1.jpg" alt="Referencia 1" style="max-width: 340px; width: 100%; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
-      <img src="imagenes/referencia2.jpg" alt="Referencia 2" style="max-width: 340px; width: 100%; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
+  
+  <!-- Imágenes de referencia debajo de Misión y Visión -->
+  <div class="imagenes-referencia">
+    <img src="imagenes/referencia1.jpg" alt="Referencia 1" class="quienes-img">
+    <img src="imagenes/referencia2.jpg" alt="Referencia 2" class="quienes-img">
+  </div>
+</section>
+
+<section id="planes" class="centrado" style="display:none;">
+  <h2>Planes y Tarifas</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 24px;">
+    <div style="flex: 1 1 320px; min-width: 280px; max-width: 400px;">
+      <p>Conoce nuestros planes flexibles y elige el que mejor se adapte a tus objetivos:</p>
+      <ul style="display: block; text-align: left; font-size: 1.1em; margin-bottom: 24px;">
+        <li><strong>Plan Básico:</strong> 12 clases al mes - $120.000/mes</li>
+        <li><strong>Plan Intermedio:</strong> 16 clases al mes - $160.000/mes</li>
+        <li><strong>Plan Ilimitado:</strong> 20 clases al mes - $200.000/mes</li>
+        <li><strong>Clase individual:</strong> $25.000</li>
+      </ul>
+      <p style="margin-top:20px; font-weight: 600;">¡Pregunta por nuestros descuentos para grupos y familiares!</p>
     </div>
+
+    <!-- Imagen con efecto de zoom centrado -->
+    <div class="imagen-zoom-container" style="flex: 1 1 320px; min-width: 280px; max-width: 420px; display: flex; justify-content: center;">
+      <img src="imagenes/tarifas.jpg" alt="Tarifas Club Amateur" class="imagen-zoom">
+    </div>
+  </div>
 </section>
 
   <!-- SECCIÓN: Formulario de inscripción -->
@@ -137,83 +141,51 @@
     </div>
   </section>
 
-  <section id="servicios">
-  <div class="servicios-contenido" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 48px; margin-top: 32px;">
-    <!-- Columna izquierda: descripción, lista y multimedia -->
-    <div style="flex: 1 1 350px; min-width: 280px; max-width: 420px; display: flex; flex-direction: column; align-items: center;">
-      <h2 style="align-self: flex-start;">Nuestros Programas</h2>
-      <p style="text-align: left;">
-        En nuestra academia ofrecemos programas para todos los niveles, desde principiantes hasta atletas avanzados. Elige tu objetivo: mejorar tu condición física, aprender defensa personal o competir profesionalmente.
-      </p>
-      <ul style="display: block; text-align: left; list-style: none; padding-left: 0; font-size: 1.1em; margin-bottom: 18px;">
-        <li>• Acondicionamiento Físico</li>
-        <li>• Aumento de Masa Muscular</li>
-        <li>• Definición</li>
-        <li>• MMA</li>
-        <li>• Boxeo</li>
-        <li>• Kick Boxing</li>
-        <li>• Wrestling</li>
-        <li>• Jiujitsu</li>
-      </ul>
-      <img src="imagenes/entrenamiento.jpg" alt="Nuestros Programas" style="display:block; margin: 16px auto 8px auto; max-width: 260px; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
-      <video autoplay loop muted playsinline style="width:100%; max-width:340px; margin: 8px 0 0 0; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
-        <source src="videos/video1.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de video.
-      </video>
-      <button class="btn" style="margin-top: 18px; width: 100%;">¡Solicita una clase de prueba!</button>
-    </div>
-    <!-- Columna derecha: detalles de programas en grid -->
-    <div style="flex: 2 1 420px; min-width: 320px;">
-      <div class="programas-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px;">
-        <div class="programa">
-          <h3>Boxeo</h3>
-          <p>Desarrolla velocidad, técnica y resistencia con entrenamientos intensos y controlados.</p>
-        </div>
-        <div class="programa">
-          <h3>MMA</h3>
-          <p>Entrenamiento integral que combina striking, grappling y estrategia de combate.</p>
-        </div>
-        <div class="programa">
-          <h3>Kick Boxing</h3>
-          <p>Quema calorías y mejora tu coordinación con técnicas de pierna y puño.</p>
-        </div>
-        <div class="programa">
-          <h3>Wrestling</h3>
-          <p>Aprende derribos, control del oponente y técnicas de lucha olímpica.</p>
-        </div>
-        <div class="programa">
-          <h3>Acondicionamiento Físico</h3>
-          <p>Mejora tu resistencia cardiovascular, fuerza y agilidad con rutinas funcionales adaptadas a tu nivel.</p>
-        </div>
-        <div class="programa">
-          <h3>Jiujitsu</h3>
-          <p>Perfecciona tus habilidades de combate en el suelo, sumisiones y control del oponente con técnicas de Jiujitsu.</p>
-        </div>
+  <section id="servicios" style="padding: 40px 20px;">
+  <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 2.2em; margin-bottom: 16px;">Nuestros Programas</h2>
+    <p style="font-size: 1.1em; color: #444; max-width: 800px; margin: 0 auto 40px;">
+      En nuestra academia ofrecemos programas para todos los niveles, desde principiantes hasta atletas avanzados. 
+      Elige tu objetivo: mejorar tu condición física, aprender defensa personal o competir profesionalmente.
+    </p>
+
+    <!-- Tarjetas de los programas con imágenes debajo -->
+    <div class="programas-grid">
+      <div class="programa">
+        <h3>Boxeo</h3>
+        <p>Desarrolla velocidad, técnica y resistencia con entrenamientos intensos y controlados.</p>
+        <img src="imagenes/boxeo.jpg" alt="Boxeo" class="programa-img">
+      </div>
+      <div class="programa">
+        <h3>MMA</h3>
+        <p>Entrenamiento integral que combina striking, grappling y estrategia de combate.</p>
+        <img src="imagenes/mma.jpg" alt="MMA" class="programa-img">
+      </div>
+      <div class="programa">
+        <h3>Kick Boxing</h3>
+        <p>Quema calorías y mejora tu coordinación con técnicas de pierna y puño.</p>
+        <img src="imagenes/kickboxing.jpg" alt="Kick Boxing" class="programa-img">
+      </div>
+      <div class="programa">
+        <h3>Wrestling</h3>
+        <p>Aprende derribos, control del oponente y técnicas de lucha olímpica.</p>
+        <img src="imagenes/wrestling.jpg" alt="Wrestling" class="programa-img">
+      </div>
+      <div class="programa">
+        <h3>Acondicionamiento Físico</h3>
+        <p>Mejora tu resistencia cardiovascular, fuerza y agilidad con rutinas funcionales adaptadas a tu nivel.</p>
+        <img src="imagenes/fitness.jpg" alt="Acondicionamiento físico" class="programa-img">
+      </div>
+      <div class="programa">
+        <h3>Jiujitsu</h3>
+        <p>Perfecciona tus habilidades de combate en el suelo, sumisiones y control del oponente con técnicas de Jiujitsu.</p>
+        <img src="imagenes/jiujitsu.jpg" alt="Jiujitsu" class="programa-img">
       </div>
     </div>
   </div>
 </section>
 
-<section id="planes" class="centrado" style="display:none;">
-  <h2>Planes y Tarifas</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 24px;">
-    <div style="flex: 1 1 320px; min-width: 280px; max-width: 400px;">
-      <p>Conoce nuestros planes flexibles y elige el que mejor se adapte a tus objetivos:</p>
-      <ul style="display: block; text-align: left; font-size: 1.1em; margin-bottom: 24px;">
-        <li><strong>Plan Básico:</strong> 12 clases al mes - $120.000/mes</li>
-        <li><strong>Plan Intermedio:</strong> 16 clases al mes - $160.000/mes</li>
-        <li><strong>Plan Ilimitado:</strong> 20 clases al mes - $200.000/mes</li>
-        <li><strong>Clase individual:</strong> $25.000</li>
-      </ul>
-      <p style="margin-top:20px; font-weight: 600;">¡Pregunta por nuestros descuentos para grupos y familiares!</p>
-    </div>
-    <div style="flex: 1 1 320px; min-width: 280px; max-width: 420px; display: flex; justify-content: center;">
-      <img src="imagenes/tarifas.jpg" alt="Tarifas Club Amateur" style="width:100%; max-width:400px; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.12);">
-    </div>
-  </div>
-</section>
-
-  <section id="contacto" style="text-align: center;">
+<section id="contacto" style="text-align: center;">
     <h2>Contacto</h2>
     <p>
       Dirección: Ac. 153 # 96A - 10 Suba, Bogotá<br>
@@ -328,6 +300,10 @@
     });
   });
 </script>
-
+<!-- AOS Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
