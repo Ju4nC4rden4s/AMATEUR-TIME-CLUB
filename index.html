@@ -84,62 +84,100 @@
 </section>
 
   <!-- SECCIÓN: Formulario de inscripción -->
-  <section id="inscripcion" class="centrado" style="display:none;">
-    <h2>Formulario de inscripción</h2>
-    <form id="form-inscripcion" style="max-width:400px; margin:20px auto; text-align:left;">
-      <label for="nombre-insc">Nombre:</label><br>
-      <input type="text" id="nombre-insc" name="nombre" required style="width:100%;margin-bottom:10px;"><br>
+<section id="inscripcion" class="centrado" align="center">
+  <h2>Formulario de inscripción</h2>
+  <form id="form-inscripcion" onsubmit="guardarDatosInscripcion(); return false;" style="max-width:400px; margin:20px auto; text-align:left;">
+    <label for="nombre-insc">Nombre:</label><br>
+    <input type="text" id="nombre-insc" name="nombre" required style="width:100%;margin-bottom:10px;"><br>
 
-      <label for="apellidos-insc">Apellidos:</label><br>
-      <input type="text" id="apellidos-insc" name="apellidos" required style="width:100%;margin-bottom:10px;"><br>
+    <label for="apellidos-insc">Apellidos:</label><br>
+    <input type="text" id="apellidos-insc" name="apellidos" required style="width:100%;margin-bottom:10px;"><br>
 
-      <label for="documento-insc">Documento de identidad:</label><br>
-      <input type="text" id="documento-insc" name="documento" required style="width:100%;margin-bottom:10px;"><br>
+    <label for="documento-insc">Documento de identidad:</label><br>
+    <input type="text" id="documento-insc" name="documento" required style="width:100%;margin-bottom:10px;"><br>
 
-      <label for="fecha-nac-insc">Fecha de nacimiento:</label><br>
-      <input type="date" id="fecha-nac-insc" name="fecha_nacimiento" required style="width:100%;margin-bottom:10px;"><br>
+    <label for="fecha-nac-insc">Fecha de nacimiento:</label><br>
+    <input type="date" id="fecha-nac-insc" name="fecha_nacimiento" required style="width:100%;margin-bottom:10px;"><br>
 
-      <label for="genero-insc">Género:</label><br>
-      <select id="genero-insc" name="genero" required style="width:100%;margin-bottom:10px;">
-        <option value="">Seleccione</option>
-        <option value="masculino">Masculino</option>
-        <option value="femenino">Femenino</option>
-        <option value="otro">Otro</option>
-      </select><br>
+    <label for="genero-insc">Género:</label><br>
+    <select id="genero-insc" name="genero" required style="width:100%;margin-bottom:10px;">
+      <option value="">Seleccione</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select><br>
 
-      <label for="telefono-insc">Teléfono:</label><br>
-      <input type="tel" id="telefono-insc" name="telefono" required style="width:100%;margin-bottom:10px;"><br>
+    <label for="telefono-insc">Teléfono:</label><br>
+    <input type="tel" id="telefono-insc" name="telefono" required style="width:100%;margin-bottom:10px;"><br>
 
-      <label for="correo-insc">Correo electrónico:</label><br>
-      <input type="email" id="correo-insc" name="correo" required style="width:100%;margin-bottom:10px;"><br>
+    <label for="correo-insc">Correo electrónico:</label><br>
+    <input type="email" id="correo-insc" name="correo" required style="width:100%;margin-bottom:10px;"><br>
 
-      <label for="direccion-insc">Dirección:</label><br>
-      <input type="text" id="direccion-insc" name="direccion" required style="width:100%;margin-bottom:15px;"><br>
+    <label for="direccion-insc">Dirección:</label><br>
+    <input type="text" id="direccion-insc" name="direccion" required style="width:100%;margin-bottom:15px;"><br>
 
-      <button type="submit" class="btn" style="width:100%;">Enviar inscripción</button>
-    </form>
-  </section>
+    <button type="submit" class="btn" style="width:100%;">Enviar inscripción</button>
+  </form>
+</section>
 
-  <!-- NUEVA SECCIÓN: Selección de plan y pago -->
-  <section id="seleccion-plan" class="centrado" style="display:none;">
-    <h2>Selecciona tu plan y realiza el pago</h2>
-    <form id="form-plan" style="max-width:400px; margin:20px auto; text-align:left;">
-      <label for="plan">Elige el plan de tu interés:</label><br>
-      <select id="plan" name="plan" required style="width:100%;margin-bottom:15px;">
-        <option value="">Seleccione un plan</option>
-        <option value="basico">Plan Básico - 12 clases ($120.000)</option>
-        <option value="intermedio">Plan Intermedio - 16 clases ($160.000)</option>
-        <option value="ilimitado">Plan Ilimitado - 20 clases ($200.000)</option>
-        <option value="individual">Clase individual ($25.000)</option>
-      </select><br>
-      <!-- Aquí puedes integrar una pasarela real, por ahora es un ejemplo -->
-      <button type="submit" class="btn" style="width:100%;">Ir a pagar</button>
-    </form>
-    <div id="pago-link" style="display:none; margin-top:20px;">
-      <p>Haz clic en el siguiente enlace para completar tu pago:</p>
-      <a id="enlace-pago" href="#" target="_blank" class="btn" style="background:#25d366;">Ir a pasarela de pagos</a>
-    </div>
-  </section>
+<!-- SECCIÓN: Selección de plan y pago -->
+<section id="seleccion-plan" class="centrado" style="display:none;">
+  <h2>Selecciona tu plan y realiza el pago</h2>
+  <form id="form-plan" style="max-width:400px; margin:20px auto; text-align:left;">
+    <label for="plan">Elige el plan de tu interés:</label><br>
+    <select id="plan" name="plan" required style="width:100%;margin-bottom:15px;">
+      <option value="">Seleccione un plan</option>
+      <option value="basico">Plan Básico - 12 clases ($120.000)</option>
+      <option value="intermedio">Plan Intermedio - 16 clases ($160.000)</option>
+      <option value="ilimitado">Plan Ilimitado - 20 clases ($200.000)</option>
+      <option value="individual">Clase individual ($25.000)</option>
+    </select><br>
+    <button type="submit" class="btn" style="width:100%;">Ir a pagar</button>
+  </form>
+</section>
+
+<!-- SCRIPTS -->
+<script>
+  // Guarda datos del formulario y pasa a sección de plan
+  function guardarDatosInscripcion() {
+    const datos = {
+      nombre: document.getElementById('nombre-insc').value,
+      apellidos: document.getElementById('apellidos-insc').value,
+      documento: document.getElementById('documento-insc').value,
+      fecha: document.getElementById('fecha-nac-insc').value,
+      genero: document.getElementById('genero-insc').value,
+      telefono: document.getElementById('telefono-insc').value,
+      correo: document.getElementById('correo-insc').value,
+      direccion: document.getElementById('direccion-insc').value
+    };
+
+    localStorage.setItem('datosInscripcion', JSON.stringify(datos));
+
+    // Muestra siguiente paso
+    document.getElementById('inscripcion').style.display = 'none';
+    document.getElementById('seleccion-plan').style.display = 'block';
+  }
+
+  // Envía a pagos.html con plan y monto
+  document.getElementById('form-plan').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const plan = document.getElementById('plan').value;
+    if (!plan) {
+      alert("Selecciona un plan antes de continuar.");
+      return;
+    }
+
+    const monto = {
+      basico: 120000,
+      intermedio: 160000,
+      ilimitado: 200000,
+      individual: 25000
+    }[plan];
+
+    window.location.href = `pagos.html?plan=${encodeURIComponent(plan)}&monto=${monto}`;
+  });
+</script>
 
   <section id="servicios" style="padding: 40px 20px;">
   <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
