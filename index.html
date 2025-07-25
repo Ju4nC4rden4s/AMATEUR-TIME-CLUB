@@ -1,9 +1,14 @@
 <!-- Botón flotante de WhatsApp -->
 <a href="https://wa.me/573024221645" class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 60px; height: 60px;">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 40px; height: 40px;">
 </a>
 
-</style>
+<!-- Botón flotante de Instagram -->
+<a href="https://www.instagram.com/club__amateur/?utm_source=qr&igsh=MXRyb2M3cGpybXZreg%3D%3D" class="instagram-float" target="_blank" aria-label="Visítanos en Instagram">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 40px; height: 40px;">
+</a>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,8 +17,9 @@
   <title>Club Amateur - Academia de Artes Marciales Mixtas</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
-  <!-- AOS CSS -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -34,23 +40,29 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
+  <!-- SECCIÓN: Quiénes Somos -->
+
   <section id="quienes-somos" align="center"data-aos="fade-up" class="centrado">
   <h2>Quiénes Somos</h2>
   <p>
-    En <strong>Club Amateur</strong> somos una academia apasionada por las artes marciales mixtas. Nos dedicamos a formar no solo deportistas, sino personas íntegras, con disciplina, respeto y fortaleza mental. Ofrecemos un ambiente inclusivo y motivador para que cada alumno, sin importar su experiencia, pueda alcanzar su máximo potencial.
+    Somos un Club de entrenamiento netamente dirigido, enfocado en salud. Utilizamos entrenamientos de contacto como
+    Artes Marciales Mixtas y Fortalecimiento Muscular. Nos apasiona guiar y mejorar la calidad de vida de nuestros usuarios, logrando
+    que mejoren su confianza, mentalidad, enfoque y físico que se requiere para hacer grandes personas y/o deportistas
   </p>
 
   <div class="mision-vision">
     <div class="mision quienes-bloque">
       <h3>Misión</h3>
       <p>
-        Brindar formación integral en artes marciales mixtas a través de entrenamiento físico, mental y técnico, fomentando valores como la disciplina, la perseverancia y el respeto.
+        Brindar formación integral y consciente a través del entrenamiento dirigido utilizando deportes de contacto
+        como las artes marciales mixtas, y el entrenamiento de fuerza, logrando mantener la disciplina, constancia, enfoque y respeto por los demás.
       </p>
     </div>
     <div class="vision quienes-bloque">
       <h3>Visión</h3>
       <p>
-        Ser reconocidos como una de las academias líderes en la formación de atletas y ciudadanos ejemplares en Colombia, promoviendo el deporte como herramienta de transformación personal y social.
+        Ser uno de los mejores clubes de entrenamiento dirigido, ya sean en trabajos de salud como tambien los deportes de contacto como lo son las artes 
+        marciales mixtas, para asi promover el ejercicio y deporte como herramienta de transformacion personal y social.
       </p>
     </div>
   </div>
@@ -62,123 +74,7 @@
   </div>
 </section>
 
-<section id="planes" class="centrado" style="display:none;">
-  <h2>Planes y Tarifas</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 24px;">
-    <div style="flex: 1 1 320px; min-width: 280px; max-width: 400px;">
-      <p>Conoce nuestros planes flexibles y elige el que mejor se adapte a tus objetivos:</p>
-      <ul style="display: block; text-align: left; font-size: 1.1em; margin-bottom: 24px;">
-        <li><strong>Plan Básico:</strong> 12 clases al mes - $120.000/mes</li>
-        <li><strong>Plan Intermedio:</strong> 16 clases al mes - $160.000/mes</li>
-        <li><strong>Plan Ilimitado:</strong> 20 clases al mes - $200.000/mes</li>
-        <li><strong>Clase individual:</strong> $25.000</li>
-      </ul>
-      <p style="margin-top:20px; font-weight: 600;">¡Pregunta por nuestros descuentos para grupos y familiares!</p>
-    </div>
-
-    <!-- Imagen con efecto de zoom centrado -->
-    <div class="imagen-zoom-container" style="flex: 1 1 320px; min-width: 280px; max-width: 420px; display: flex; justify-content: center;">
-      <img src="imagenes/tarifas.jpg" alt="Tarifas Club Amateur" class="imagen-zoom">
-    </div>
-  </div>
-</section>
-
-  <!-- SECCIÓN: Formulario de inscripción -->
-<section id="inscripcion" class="centrado" align="center">
-  <h2>Formulario de inscripción</h2>
-  <form id="form-inscripcion" onsubmit="guardarDatosInscripcion(); return false;" style="max-width:400px; margin:20px auto; text-align:left;">
-    <label for="nombre-insc">Nombre:</label><br>
-    <input type="text" id="nombre-insc" name="nombre" required style="width:100%;margin-bottom:10px;"><br>
-
-    <label for="apellidos-insc">Apellidos:</label><br>
-    <input type="text" id="apellidos-insc" name="apellidos" required style="width:100%;margin-bottom:10px;"><br>
-
-    <label for="documento-insc">Documento de identidad:</label><br>
-    <input type="text" id="documento-insc" name="documento" required style="width:100%;margin-bottom:10px;"><br>
-
-    <label for="fecha-nac-insc">Fecha de nacimiento:</label><br>
-    <input type="date" id="fecha-nac-insc" name="fecha_nacimiento" required style="width:100%;margin-bottom:10px;"><br>
-
-    <label for="genero-insc">Género:</label><br>
-    <select id="genero-insc" name="genero" required style="width:100%;margin-bottom:10px;">
-      <option value="">Seleccione</option>
-      <option value="masculino">Masculino</option>
-      <option value="femenino">Femenino</option>
-      <option value="otro">Otro</option>
-    </select><br>
-
-    <label for="telefono-insc">Teléfono:</label><br>
-    <input type="tel" id="telefono-insc" name="telefono" required style="width:100%;margin-bottom:10px;"><br>
-
-    <label for="correo-insc">Correo electrónico:</label><br>
-    <input type="email" id="correo-insc" name="correo" required style="width:100%;margin-bottom:10px;"><br>
-
-    <label for="direccion-insc">Dirección:</label><br>
-    <input type="text" id="direccion-insc" name="direccion" required style="width:100%;margin-bottom:15px;"><br>
-
-    <button type="submit" class="btn" style="width:100%;">Enviar inscripción</button>
-  </form>
-</section>
-
-<!-- SECCIÓN: Selección de plan y pago -->
-<section id="seleccion-plan" class="centrado" style="display:none;">
-  <h2>Selecciona tu plan y realiza el pago</h2>
-  <form id="form-plan" style="max-width:400px; margin:20px auto; text-align:left;">
-    <label for="plan">Elige el plan de tu interés:</label><br>
-    <select id="plan" name="plan" required style="width:100%;margin-bottom:15px;">
-      <option value="">Seleccione un plan</option>
-      <option value="basico">Plan Básico - 12 clases ($120.000)</option>
-      <option value="intermedio">Plan Intermedio - 16 clases ($160.000)</option>
-      <option value="ilimitado">Plan Ilimitado - 20 clases ($200.000)</option>
-      <option value="individual">Clase individual ($25.000)</option>
-    </select><br>
-    <button type="submit" class="btn" style="width:100%;">Ir a pagar</button>
-  </form>
-</section>
-
-<!-- SCRIPTS -->
-<script>
-  // Guarda datos del formulario y pasa a sección de plan
-  function guardarDatosInscripcion() {
-    const datos = {
-      nombre: document.getElementById('nombre-insc').value,
-      apellidos: document.getElementById('apellidos-insc').value,
-      documento: document.getElementById('documento-insc').value,
-      fecha: document.getElementById('fecha-nac-insc').value,
-      genero: document.getElementById('genero-insc').value,
-      telefono: document.getElementById('telefono-insc').value,
-      correo: document.getElementById('correo-insc').value,
-      direccion: document.getElementById('direccion-insc').value
-    };
-
-    localStorage.setItem('datosInscripcion', JSON.stringify(datos));
-
-    // Muestra siguiente paso
-    document.getElementById('inscripcion').style.display = 'none';
-    document.getElementById('seleccion-plan').style.display = 'block';
-  }
-
-  // Envía a pagos.html con plan y monto
-  document.getElementById('form-plan').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const plan = document.getElementById('plan').value;
-    if (!plan) {
-      alert("Selecciona un plan antes de continuar.");
-      return;
-    }
-
-    const monto = {
-      basico: 120000,
-      intermedio: 160000,
-      ilimitado: 200000,
-      individual: 25000
-    }[plan];
-
-    window.location.href = `pagos.html?plan=${encodeURIComponent(plan)}&monto=${monto}`;
-  });
-</script>
-
+<!-- SECCIÓN: Nuestros Programas -->
   <section id="servicios" style="padding: 40px 20px;">
   <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
     <h2 style="font-size: 2.2em; margin-bottom: 16px;">Nuestros Programas</h2>
@@ -223,42 +119,228 @@
   </div>
 </section>
 
-<section id="contacto" style="text-align: center;">
-    <h2>Contacto</h2>
-    <p>
-      Dirección: Ac. 153 # 96A - 10 Suba, Bogotá<br>
-      Teléfono: 302 422 1645<br>
-      Email: jhonnysuan_94@outlook.com
-    </p>
-    <div style="margin: 0 auto; max-width: 400px;">
-      <iframe
-        src="https://www.google.com/maps?q=Ac.+153+%23+96A+-+10,+Suba,+Bogotá&output=embed"
-        width="100%" height="250" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+<!-- SECCIÓN: Planes y Tarifas -->
+<section id="planes" class="centrado" style="display:none;">
+  <h2>Planes y Tarifas</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 24px;">
+    <div style="flex: 1 1 320px; min-width: 280px; max-width: 400px;">
+      <p>Conoce nuestros planes flexibles y elige el que mejor se adapte a tus objetivos:</p>
+      <ul style="display: block; text-align: left; font-size: 1.1em; margin-bottom: 24px;">
+        <li><strong>Plan Básico:</strong> 12 clases al mes - $120.000/mes</li>
+        <li><strong>Plan Intermedio:</strong> 16 clases al mes - $160.000/mes</li>
+        <li><strong>Plan Ilimitado:</strong> 20 clases al mes - $200.000/mes</li>
+        <li><strong>Clase individual:</strong> $25.000</li>
+      </ul>
+      <p style="margin-top:20px; font-weight: 600;">¡Pregunta por nuestros descuentos para grupos y familiares!</p>
     </div>
-    <h3 style="margin-top:30px;">Solicita una clase de prueba</h3>
-    <form id="form-clase-prueba" style="max-width:350px; margin:20px auto; text-align:left;">
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" id="nombre" name="nombre" required style="width:100%;margin-bottom:10px;"><br>
-      <label for="telefono">Teléfono:</label><br>
-      <input type="tel" id="telefono" name="telefono" required style="width:100%;margin-bottom:10px;"><br>
-      <label for="dia">Día:</label><br>
-      <input type="date" id="dia" name="dia" required style="width:100%;margin-bottom:10px;"><br>
-      <label for="hora">Hora:</label><br>
-      <input type="time" id="hora" name="hora" required style="width:100%;margin-bottom:15px;"><br>
-      <button type="submit" class="btn" style="width:100%;">Enviar solicitud</button>
-    </form>
-  </section>
 
-  <footer>
-  &copy; 2025 Club Amateur. Todos los derechos reservados.
-  <p>Síguenos:</p>
-  <a href="https://instagram.com/" target="_blank">Instagram</a> |
-  <a href="https://facebook.com/" target="_blank">Facebook</a>
+    <!-- Imagen con efecto de zoom centrado -->
+    <div class="imagen-zoom-container" style="flex: 1 1 320px; min-width: 280px; max-width: 420px; display: flex; justify-content: center;">
+      <img src="imagenes/tarifas.jpg" alt="Tarifas Club Amateur" class="imagen-zoomable">
+    </div>
+  </div>
+</section>
+
+    <!-- Contenedor para la imagen ampliada -->
+    <div id="overlay" class="overlay">
+      <img id="imagen-ampliada" src="" alt="Imagen ampliada">
+    </div>
+
+  <!-- SECCIÓN: Formulario de inscripción -->
+<section id="inscripcion" class="centrado" align="center">
+  <h2>Formulario de inscripción</h2>
+  <form id="form-inscripcion" onsubmit="guardarDatosInscripcion(); return false;" style="max-width:400px; margin:20px auto; text-align:left;">
+    <label for="nombre-insc">Nombre:</label><br>
+    <input type="text" id="nombre-insc" name="nombre" required style="width:100%;margin-bottom:10px;"><br>
+
+    <label for="apellidos-insc">Apellidos:</label><br>
+    <input type="text" id="apellidos-insc" name="apellidos" required style="width:100%;margin-bottom:10px;"><br>
+
+    <label for="documento-insc">Documento de identidad:</label><br>
+    <input type="text" id="documento-insc" name="documento" required style="width:100%;margin-bottom:10px;"><br>
+
+    <label for="edad-insc">Edad:</label><br>
+    <input type="text" id="edad-insc" name="edad" required style="width:100%;margin-bottom:10px;"><br>
+
+    <label for="genero-insc">Género:</label><br>
+    <select id="genero-insc" name="genero" required style="width:100%;margin-bottom:10px;">
+      <option value="">Seleccione</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select><br>
+
+    <label for="telefono-insc">Teléfono:</label><br>
+    <input type="tel" id="telefono-insc" name="telefono" required style="width:100%;margin-bottom:10px;"><br>
+
+    <label for="objetivo-insc">Objetivo:</label><br>
+    <input type="text" id="objetivo-insc" name="objetivo" required style="width:100%;margin-bottom:15px;"><br>
+
+    <!-- Lista de patologías -->
+<div class="form-group">
+  <label for="patologias"><strong>¿Tienes alguna de estas condiciones médicas que puedan afectar tu entrenamiento?</strong></label>
+  <div id="patologias" style="margin-top: 10px;">
+    <label><input type="checkbox" name="patologias" value="Ninguna" id="ningunaPatologia"> Ninguna</label><br>
+    <label><input type="checkbox" name="patologias" value="Hipertensión" class="otraPatologia"> Hipertensión</label><br>
+    <label><input type="checkbox" name="patologias" value="Problemas cardíacos" class="otraPatologia"> Problemas cardíacos</label><br>
+    <label><input type="checkbox" name="patologias" value="Asma" class="otraPatologia"> Asma</label><br>
+    <label><input type="checkbox" name="patologias" value="Lesiones articulares" class="otraPatologia"> Lesiones articulares (rodilla, hombro, etc.)</label><br>
+    <label><input type="checkbox" name="patologias" value="Problemas de columna" class="otraPatologia"> Problemas de columna</label><br>
+    <label><input type="checkbox" name="patologias" value="Epilepsia" class="otraPatologia"> Epilepsia</label><br>
+    <label><input type="checkbox" name="patologias" value="Diabetes" class="otraPatologia"> Diabetes</label><br>
+    <label><input type="checkbox" name="patologias" value="Otra" class="otraPatologia"> Otra (especificar abajo)</label>
+  </div>
+
+  <!-- Campo de texto para "Otra" -->
+  <input type="text" name="otra_patologia" placeholder="Especifica otra condición médica" style="margin-top:10px; width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+</div>
+
+<!-- Script para lógica de selección -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ningunaCheckbox = document.getElementById('ningunaPatologia');
+    const otrasCheckboxes = document.querySelectorAll('.otraPatologia');
+
+    // Si selecciona "Ninguna", se desmarcan las demás
+    ningunaCheckbox.addEventListener('change', () => {
+      if (ningunaCheckbox.checked) {
+        otrasCheckboxes.forEach(cb => cb.checked = false);
+      }
+    });
+
+    // Si marca cualquier otra, se desmarca "Ninguna"
+    otrasCheckboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        if (cb.checked) {
+          ningunaCheckbox.checked = false;
+        }
+      });
+    });
+  });
+</script>
+
+    <button type="submit" class="btn" style="width:100%;">Enviar inscripción</button>
+  </form>
+</section>
+
+<!-- SECCIÓN: Selección de plan y pago -->
+<section id="seleccion-plan" class="centrado" style="display:none;">
+  <h2 class="titulo-pago">Selecciona tu plan y realiza el pago</h2>
+  <form id="form-plan" style="max-width:400px; margin:20px auto; text-align:left;">
+    <label for="plan">Elige el plan de tu interés:</label><br>
+    <select id="plan" name="plan" required style="width:100%;margin-bottom:15px;">
+      <option value="">Seleccione un plan</option>
+      <option value="basico">Plan Básico - 12 clases ($120.000)</option>
+      <option value="intermedio">Plan Intermedio - 16 clases ($160.000)</option>
+      <option value="ilimitado">Plan Ilimitado - 20 clases ($200.000)</option>
+      <option value="individual">Clase individual ($25.000)</option>
+    </select><br>
+    <button type="submit" class="btn" style="width:100%;">Ir a pagar</button>
+  </form>
+</section>
+
+<!-- SCRIPTS -->
+<script>
+  // Guarda datos del formulario y pasa a sección de plan
+  function guardarDatosInscripcion() {
+    const datos = {
+      nombre: document.getElementById('nombre-insc').value,
+      apellidos: document.getElementById('apellidos-insc').value,
+      documento: document.getElementById('documento-insc').value,
+      edad: document.getElementById('edad-insc').value,
+      genero: document.getElementById('genero-insc').value,
+      telefono: document.getElementById('telefono-insc').value,
+      objetivo: document.getElementById('objetivo-insc').value
+    };
+
+    localStorage.setItem('datosInscripcion', JSON.stringify(datos));
+
+    // Muestra siguiente paso
+    document.getElementById('inscripcion').style.display = 'none';
+    document.getElementById('seleccion-plan').style.display = 'block';
+  }
+
+  // Envía a pagos.html con plan y monto
+  document.getElementById('form-plan').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const plan = document.getElementById('plan').value;
+    if (!plan) {
+      alert("Selecciona un plan antes de continuar."); 
+      return;
+    }
+
+    const monto = {
+      basico: 120000,
+      intermedio: 160000,
+      ilimitado: 200000,
+      individual: 25000
+    }[plan];
+
+    window.location.href = `pagos.html?plan=${encodeURIComponent(plan)}&monto=${monto}`;
+  });
+</script>
+
+<!-- SECCIÓN: Contacto -->
+<section id="contacto" style="text-align: center; padding: 40px 16px;">
+  <h2 style="font-size: 2em; margin-bottom: 16px;">Contacto</h2>
+  <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 24px;">
+    📍 Dirección: Ac. 153 # 96A - 10, Suba, Bogotá<br>
+    📞 Teléfono: <a href="tel:3024221645" style="color: #000; text-decoration: underline;">302 422 1645</a><br>
+    📧 Email: <a href="mailto:jhonnysuan_94@outlook.com" style="color: #000; text-decoration: underline;">jhonnysuan_94@outlook.com</a>
+  </p>
+
+  <div style="margin: 0 auto; max-width: 600px;">
+    <iframe
+      src="https://www.google.com/maps?q=Ac.+153+%23+96A+-+10,+Suba,+Bogotá&output=embed"
+      width="100%" height="300" style="border:0; border-radius: 16px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+  <footer style="background-color: #111; color: #fff; text-align: center; padding: 20px;">
+  <p>&copy; 2025 Club Amateur. Todos los derechos reservados.</p>
+   <p>
+    <a href="documentos/contrato.pdf" target="_blank">📄 Reglas del Club</a>
+   </p>
+  <p>Síguenos en nuestras redes:</p>
+  <p>
+    <a href="https://www.instagram.com/club__amateur/?utm_source=qr&igsh=MXRyb2M3cGpybXZreg%3D%3D#" target="_blank" style="color: #fff; margin: 0 10px;">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <!-- a href="https://tiktok.com/" target="_blank" style="color: #fff; margin: 0 10px;">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a-->
+  </p>
 </footer>
 
+  <!-- SCRIPT -->
   <script>
-    
+    function guardarDatos() {
+    // Guardar nombre y demás campos que ya tienes  
+    const nombre = document.getElementById("nombre").value;
+    localStorage.setItem("nombre", nombre);
+    // Agrega aquí los demás datos que ya estás guardando...
+
+    // Recolectar patologías seleccionadas
+    const patologiasSeleccionadas = [];
+    document.querySelectorAll('input[name="patologias"]:checked').forEach(cb => {
+      patologiasSeleccionadas.push(cb.value);
+    });
+
+    // Si marcaron "Otra", agregar lo que escribieron
+    const otraPatologia = document.querySelector('input[name="otra_patologia"]').value.trim();
+    if (otraPatologia !== "") {
+      patologiasSeleccionadas.push("Otra: " + otraPatologia);
+    }
+
+    // Guardar en localStorage
+    localStorage.setItem("patologias", patologiasSeleccionadas.join(", "));
+
+    // Redirigir a pago.html
+    window.location.href = "pago.html";
+  }
   // Espera a que el DOM esté listo
   document.addEventListener("DOMContentLoaded", function() {
     const secciones = ["quienes-somos", "servicios", "planes", "inscripcion", "seleccion-plan", "contacto"];
@@ -334,6 +416,27 @@
             document.getElementById("form-clase-prueba").scrollIntoView({behavior: "smooth"});
           }, 100);
         });
+      }
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const imagenes = document.querySelectorAll('.imagen-zoomable');
+    const overlay = document.getElementById('overlay');
+    const imagenAmpliada = document.getElementById('imagen-ampliada');
+
+    imagenes.forEach(img => {
+      img.addEventListener('click', () => {
+        imagenAmpliada.src = img.src;
+        overlay.style.display = 'flex';
+      });
+    });
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target !== imagenAmpliada) {
+        overlay.style.display = 'none';
+        imagenAmpliada.src = '';
       }
     });
   });
