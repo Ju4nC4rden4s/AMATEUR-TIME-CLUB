@@ -27,8 +27,8 @@
     <div class="encabezado-contenido">
       <img class="logo-encabezado" src="imagenes/logo-academia.jpg" alt="Logo Club Amateur">
       <div class="encabezado-texto">
-      <h1>Club Amateur</h1>
-      <p>Academia de Artes Marciales Mixtas</p>
+      <h1 style="text-align: center;">Club Amateur</h1>
+      <p>Nos enfocamos en guiar y mejorar la calidad de vida de nuestros usuarios</p>
     </div>
   </header>
 
@@ -68,68 +68,129 @@
   </div>
   
   <!-- Imágenes de referencia debajo de Misión y Visión -->
-  <div class="imagenes-referencia">
-    <img src="imagenes/referencia1.jpg" alt="Referencia 1" class="quienes-img">
-    <img src="imagenes/referencia2.jpg" alt="Referencia 2" class="quienes-img">
+<div class="slider-wrapper">
+  <div class="slider-contenedor"> 
+    <img src="imagenes/referencia1.jpg" alt="Referencia 1" class="slider-img">
+    <img src="imagenes/bjj.jpg" alt="Referencia 2" class="slider-img">
+    <img src="imagenes/referencia3.jpg" alt="Referencia 3" class="slider-img">
   </div>
+</div>
+
 </section>
 
 <!-- SECCIÓN: Nuestros Programas -->
-  <section id="servicios" style="padding: 40px 20px;">
-  <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
-    <h2 style="font-size: 2.2em; margin-bottom: 16px;">Nuestros Programas</h2>
-    <p style="font-size: 1.1em; color: #444; max-width: 800px; margin: 0 auto 40px;">
-      En nuestra academia ofrecemos programas para todos los niveles, desde principiantes hasta atletas avanzados. 
-      Elige tu objetivo: mejorar tu condición física, aprender defensa personal o competir profesionalmente.
+<section id="servicios" class="programas-section">
+  <div class="container">
+    <h2>Nuestros Programas</h2>
+    <p class="intro">
+      Manejamos entrenamientos dirigidos teniendo en cuenta las necesidades de nuestros usuarios, ¡entre estos encontrarás!
     </p>
 
-    <!-- Tarjetas de los programas con imágenes debajo -->
-    <div class="programas-grid">
-      <div class="programa">
-        <h3>Boxeo</h3>
-        <p>Desarrolla velocidad, técnica y resistencia con entrenamientos intensos y controlados.</p>
-        <img src="imagenes/boxeo.jpg" alt="Boxeo" class="programa-img">
+    <!-- Bloques de programas -->
+    <div class="programa-bloque" align="center">
+      <div class="programa-img">
+        <img src="imagenes/boxeo.jpg" alt="Boxeo">
       </div>
-      <div class="programa">
+      <div class="programa-info">
+        <h3>Trabajo de fuerza y pesas</h3>  
+        <p>Entrenamiento integral que combina ejercicios de fuerza, resistencia y movilidad para mejorar el rendimiento físico general.</p>
+        <p>Los beneficios incluyen:</p>
+        <ul>
+          <li>Mejora de la fuerza y resistencia muscular</li>
+          <li>Incremento de la masa muscular</li>
+          <li>Mejora de la salud ósea y articular</li>
+          <li>Mejora del metabolismo y quema de grasa</li>
+          <li>Reducción del riesgo de lesiones</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="programa-bloque reverse" align="center">
+      <div class="programa-img">
+        <img src="imagenes/mma.jpg" alt="MMA">
+      </div>
+      <div class="programa-info">
         <h3>MMA</h3>
-        <p>Entrenamiento integral que combina striking, grappling y estrategia de combate.</p>
-        <img src="imagenes/mma.jpg" alt="MMA" class="programa-img">
+        <p>Aunque muchas personas asocian el MMA con competencias de alto nivel como la UFC, el entrenamiento es accesible para
+          personas de diferentes edades y niveles, y no necesariamente implica participar en peleas profesionales.</p>
+        <p>Los beneficios del entrenamiento de MMA incluyen:</p>
+          <ul>
+            <li>Mejora tu condición física</li>
+            <li>Desarrolla habilidades de autodefensa</li>
+            <li>Fomenta la disciplina y el autocontrol</li>
+            <li>Mejora coordinación, equilibrio y reflejos</li>
+            <li>Reducción de estrés y mejora emocional</li>
+          </ul>
       </div>
-      <div class="programa">
-        <h3>Kick Boxing</h3>
-        <p>Quema calorías y mejora tu coordinación con técnicas de pierna y puño.</p>
-        <img src="imagenes/kickboxing.jpg" alt="Kick Boxing" class="programa-img">
+    </div>
+
+    <div class="programa-bloque reverse" align="center">
+      <div class="programa-img">
+        <img src="imagenes/wrestling.jpg" alt="Wrestling">
       </div>
-      <div class="programa">
-        <h3>Wrestling</h3>
-        <p>Aprende derribos, control del oponente y técnicas de lucha olímpica.</p>
-        <img src="imagenes/wrestling.jpg" alt="Wrestling" class="programa-img">
+      <div class="programa-info">
+        <h3>Trabajo funcional</h3>
+        <p>Entrenamiento que mejora la fuerza, equilibrio y flexibilidad a través de movimientos naturales.</p>
+        <p>Los beneficios incluyen:</p>
+        <ul>
+          <li>Mejora de rendimiento deportivo</li>
+          <li>Adaptable a todos los niveles</li>
+          <li>Mejora de la movilidad y flexibilidad</li>
+          <li>Reducción del riesgo de lesiones</li>
+          <li>Mejora del equilibrio y coordinación</li>
+        </ul>
       </div>
-      <div class="programa">
+    </div>
+
+    <div class="programa-bloque" align="center">
+      <div class="programa-img">
+        <img src="imagenes/fitness.jpg" alt="Acondicionamiento Físico">
+      </div>
+      <div class="programa-info">
         <h3>Acondicionamiento Físico</h3>
-        <p>Mejora tu resistencia cardiovascular, fuerza y agilidad con rutinas funcionales adaptadas a tu nivel.</p>
-        <img src="imagenes/fitness.jpg" alt="Acondicionamiento físico" class="programa-img">
+        <p>Este tipo de entrenamiento ofrece numerosos tipos de beneficios, entre estos:</p>
+        <ul>
+          <li>Mejora de la resistencia cardiovascular</li>
+          <li>Aumento de la fuerza y tonificación muscular</li>
+          <li>Mejora tu salud mental y emocional</li>
+          <li>Reducción del estrés y mejora del bienestar mental</li>
+        </ul>
       </div>
-      <div class="programa">
+    </div>
+
+    <div class="programa-bloque reverse" align="center">
+      <div class="programa-img">
+        <img src="imagenes/jiujitsu.jpg" alt="Jiujitsu">
+      </div>
+      <div class="programa-info">
         <h3>Jiujitsu</h3>
         <p>Perfecciona tus habilidades de combate en el suelo, sumisiones y control del oponente con técnicas de Jiujitsu.</p>
-        <img src="imagenes/jiujitsu.jpg" alt="Jiujitsu" class="programa-img">
+        <p>Los beneficios incluyen:</p>
+        <ul>
+          <li>Defensa personal</li>
+          <li>Incremento de la flexibilidad y movilidad</li>
+          <li>Mejora confianza y autoestima</li>
+          <li>Mejora de la concentración y disciplina</li>
+          <li>Reducción del estrés y manejo de presión</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- SECCIÓN: Planes y Tarifas -->
-<section id="planes" class="centrado" style="display:none;">
+<section id="planes" class="center" style="display:none;text-align: center;">
   <h2>Planes y Tarifas</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 24px;">
-    <div style="flex: 1 1 320px; min-width: 280px; max-width: 400px;">
-      <p>Conoce nuestros planes flexibles y elige el que mejor se adapte a tus objetivos:</p>
-      <ul style="display: block; text-align: left; font-size: 1.1em; margin-bottom: 24px;">
-        <li><strong>Plan Básico:</strong> 12 clases al mes - $120.000/mes</li>
-        <li><strong>Plan Intermedio:</strong> 16 clases al mes - $160.000/mes</li>
-        <li><strong>Plan Ilimitado:</strong> 20 clases al mes - $200.000/mes</li>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 24px; text-align: center;">
+    <div style="flex: 1 1 320px; min-width: 280px; max-width: 400px; margin: 0 auto;">
+      <p>Conoce nuestros planes individuales, para pareja o grupal de maximo 4 personas! Están diseñados para ayudarte en tiempo y
+        economía, elije el mejor que se adapte a tus necesidades y objetivos.</p>
+      <p>Los planes incluyen:</p>
+      <ul style="display: block; text-align: left; font-size: 1.1em; margin-bottom: 24px; text-align: center;">
         <li><strong>Clase individual:</strong> $25.000</li>
+        <li><strong>Plan Básico:</strong> 12 clases al mes </li>
+        <li><strong>Plan Intermedio:</strong> 16 clases al mes </li>
+        <li><strong>Plan Avanzado:</strong> 20 clases al mes </li>
       </ul>
       <p style="margin-top:20px; font-weight: 600;">¡Pregunta por nuestros descuentos para grupos y familiares!</p>
     </div>
@@ -420,6 +481,23 @@
     });
   });
 </script>
+
+<script>
+  const imagenes = document.querySelectorAll('.slider-img');
+  let index = 0;
+
+  function mostrarSiguienteImagen() {
+    imagenes.forEach((img, i) => {
+      img.classList.remove('activa');
+    });
+    imagenes[index].classList.add('activa');
+    index = (index + 1) % imagenes.length;
+  }
+
+  mostrarSiguienteImagen(); // Mostrar la primera
+  setInterval(mostrarSiguienteImagen, 3000); // Cambia cada 3 segundos
+</script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const imagenes = document.querySelectorAll('.imagen-zoomable');

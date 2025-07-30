@@ -402,3 +402,128 @@ footer {
 .instagram-float:hover {
   transform: scale(1.1);
 }
+
+/* Estilos para el slider de imágenes inicio*/
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.slider-contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 360px;  /* ✅ Cambia este valor para reducir aún más */
+  aspect-ratio: 4 / 3; /* ✅ Mantiene proporción y hace altura automática */
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #eee;
+}
+
+.slider-img {
+  position: absolute;
+  inset: 0; /* ✅ Ocupa todo el contenedor */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 16px;
+}
+
+.slider-img.activa {
+  opacity: 1;
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .slider-contenedor {
+    max-width: 300px;
+    height: 180px;
+  }
+}
+
+.programas-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.programas-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.programas-section h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 16px;
+}
+
+.programas-section .intro {
+  text-align: center;
+  font-size: 1.1em;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.programa-bloque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.programa-bloque:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.programa-bloque.reverse {
+  flex-direction: row-reverse;
+}
+
+.programa-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.programa-info {
+  max-width: 500px;
+}
+
+.programa-info h3 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.programa-info p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+  .programa-bloque,
+  .programa-bloque.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .programa-img img {
+    max-width: 100%;
+  }
+
+  .programa-info {
+    padding: 20px;
+  }
+}
