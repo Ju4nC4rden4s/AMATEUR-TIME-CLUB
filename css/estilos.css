@@ -119,46 +119,86 @@ footer {
 }
 
 /* PROGRAMAS */
-.programas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 28px;
-  margin-top: 32px;
-  justify-items: center;
-}
-
-.programa {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.programa-bloque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
-  text-align: center;
-  width: 100%;
-  max-width: 320px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.programa:hover {
+.programa-bloque:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .programa-img {
-  margin-top: 12px;
-  border-radius: 10px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.programa-img img {
+  width: 100%;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.programa-titulo {
-  font-size: 18px;
-  font-weight: 600;
+.programa-info {
+  flex: 1;
+  text-align: left;
+}
+
+.programa-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.programa-info p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
-.programa-descripcion {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.4;
+.programa-info ul {
+  list-style: disc inside;
+  color: #333;
+  margin-top: 10px;
+}
+
+.programa-info ul li {
+  margin-bottom: 6px;
+}
+
+/* Alternar orden (imagen derecha) */
+.programa-bloque.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .programa-bloque,
+  .programa-bloque.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .programa-info {
+    text-align: center;
+  }
+
+  .programa-img {
+    max-width: 100%;
+  }
 }
 
 /* QUIÉNES SOMOS */
@@ -413,7 +453,7 @@ footer {
 .slider-contenedor {
   position: relative;
   width: 100%;
-  max-width: 360px;  /* ✅ Cambia este valor para reducir aún más */
+  max-width: 500px;  /* ✅ Cambia este valor para reducir aún más */
   aspect-ratio: 4 / 3; /* ✅ Mantiene proporción y hace altura automática */
   overflow: hidden;
   border-radius: 16px;
@@ -527,3 +567,4 @@ footer {
     padding: 20px;
   }
 }
+
