@@ -143,3 +143,8 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(s => obs.observe(s));
   }
 });
+document.getElementById("menuToggle")
+.addEventListener("click", () => {
+  document.getElementById("menu")
+  .classList.toggle("show");
+});

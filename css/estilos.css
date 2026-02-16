@@ -674,3 +674,57 @@ footer a{
   }
 
 }
+.navbar{
+  position: sticky;
+  top: 0;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.menu{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-toggle{
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* 📱 MOVIL */
+@media(max-width:768px){
+
+  .menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .menu.show{
+    display: flex;
+  }
+
+  .menu-toggle{
+    display: block;
+  }
+}
