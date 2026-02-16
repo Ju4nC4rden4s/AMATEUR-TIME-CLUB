@@ -148,3 +148,13 @@ document.getElementById("menuToggle")
   document.getElementById("menu")
   .classList.toggle("show");
 });
+const btn = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+
+btn.addEventListener("click", () => {
+  menu.classList.toggle("is-open");
+});
+
+menu.querySelectorAll("a").forEach(a => {
+  a.addEventListener("click", () => menu.classList.remove("is-open"));
+});
