@@ -1,119 +1,121 @@
-<!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/573024221645" class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 40px; height: 40px;">
-</a>
-
-<!-- Botón flotante de Instagram -->
-<a href="https://www.instagram.com/club__amateur/?utm_source=qr&igsh=MXRyb2M3cGpybXZreg%3D%3D" class="instagram-float" target="_blank" aria-label="Visítanos en Instagram">
-  <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 40px; height: 40px;">
-</a>
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Club Amateur - Academia de Artes Marciales Mixtas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
+
 <body>
 
-  <header>
-    <div class="encabezado-contenido">
-      <img class="logo-encabezado" src="imagenes/logo-academia.jpg" alt="Logo Club Amateur">
-      <div class="encabezado-texto">
-      <h1 style="text-align: center;">Club Amateur</h1>
-      <p>Nos enfocamos en guiar y mejorar la calidad de vida de nuestros usuarios</p>
+  <!-- Botones flotantes -->
+  <a href="https://wa.me/573024221645" class="social-float wa" target="_blank" aria-label="Chatea por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://www.instagram.com/club__amateur/?utm_source=qr&igsh=MXRyb2M3cGpybXZreg%3D%3D"
+     class="social-float ig" target="_blank" aria-label="Visítanos en Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <img class="brand__logo" src="imagenes/logo-academia.jpg" alt="Logo Club Amateur">
+        <div class="brand__text">
+          <h1>Club Amateur</h1>
+          <p>Nos enfocamos en guiar y mejorar la calidad de vida de nuestros usuarios</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#quienes-somos" class="nav__link">Quiénes Somos</a>
+        <a href="#servicios" class="nav__link">Nuestros Programas</a>
+        <a href="#planes" class="nav__link">Planes y Horarios</a>
+        <a href="#inscripcion" class="nav__link">Inscripción</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
     </div>
   </header>
 
-  <nav>
-    <a href="#quienes-somos">Quiénes Somos</a>
-    <a href="#servicios">Nuestros Programas</a>
-    <a href="#planes">Planes y Horarios</a>
-    <a href="#inscripcion">Inscripción</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
   <!-- SECCIÓN: Quiénes Somos -->
-
-  <section id="quienes-somos" align="center"data-aos="fade-up" class="centrado">
-  <h2>Quiénes Somos</h2>
-  <p>
-    Somos un Club de entrenamiento netamente dirigido, enfocado en salud. Utilizamos entrenamientos de contacto como
-    Artes Marciales Mixtas y Fortalecimiento Muscular. Nos apasiona guiar y mejorar la calidad de vida de nuestros usuarios, logrando
-    que mejoren su confianza, mentalidad, enfoque y físico que se requiere para hacer grandes personas y/o deportistas
-  </p>
-
-  <div class="mision-vision">
-    <div class="mision quienes-bloque">
-      <h3>Misión</h3>
+  <section id="quienes-somos" data-aos="fade-up" class="centrado">
+    <div class="container">
+      <h2>Quiénes Somos</h2>
       <p>
-        Brindar formación integral y consciente a través del entrenamiento dirigido utilizando deportes de contacto
-        como las artes marciales mixtas, y el entrenamiento de fuerza, logrando mantener la disciplina, constancia, enfoque y respeto por los demás.
+        Somos un Club de entrenamiento netamente dirigido, enfocado en salud. Utilizamos entrenamientos de contacto como
+        Artes Marciales Mixtas y Fortalecimiento Muscular. Nos apasiona guiar y mejorar la calidad de vida de nuestros usuarios, logrando
+        que mejoren su confianza, mentalidad, enfoque y físico que se requiere para hacer grandes personas y/o deportistas
       </p>
+
+      <div class="mision-vision">
+        <div class="mision quienes-bloque">
+          <h3>Misión</h3>
+          <p>
+            Brindar formación integral y consciente a través del entrenamiento dirigido utilizando deportes de contacto
+            como las artes marciales mixtas, y el entrenamiento de fuerza, logrando mantener la disciplina, constancia, enfoque y respeto por los demás.
+          </p>
+        </div>
+
+        <div class="vision quienes-bloque">
+          <h3>Visión</h3>
+          <p>
+            Ser uno de los mejores clubes de entrenamiento dirigido, ya sean en trabajos de salud como tambien los deportes de contacto como lo son las artes
+            marciales mixtas, para asi promover el ejercicio y deporte como herramienta de transformacion personal y social.
+          </p>
+        </div>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="slider-contenedor">
+          <img src="imagenes/referencia1.jpg" alt="Referencia 1" class="slider-img">
+          <img src="imagenes/bjj.jpg" alt="Referencia 2" class="slider-img">
+          <img src="imagenes/referencia3.jpg" alt="Referencia 3" class="slider-img">
+        </div>
+      </div>
     </div>
-    <div class="vision quienes-bloque">
-      <h3>Visión</h3>
-      <p>
-        Ser uno de los mejores clubes de entrenamiento dirigido, ya sean en trabajos de salud como tambien los deportes de contacto como lo son las artes 
-        marciales mixtas, para asi promover el ejercicio y deporte como herramienta de transformacion personal y social.
+  </section>
+
+  <!-- SECCIÓN: Nuestros Programas -->
+  <section id="servicios" class="programas-section">
+    <div class="container">
+      <h2>Nuestros Programas <center></h2>
+      <p class="intro">
+        Manejamos entrenamientos dirigidos teniendo en cuenta las necesidades de nuestros usuarios, ¡entre estos encontrarás!
       </p>
-    </div>
-  </div>
-  
-  <!-- Imágenes de referencia debajo de Misión y Visión -->
-<div class="slider-wrapper">
-  <div class="slider-contenedor"> 
-    <img src="imagenes/referencia1.jpg" alt="Referencia 1" class="slider-img">
-    <img src="imagenes/bjj.jpg" alt="Referencia 2" class="slider-img">
-    <img src="imagenes/referencia3.jpg" alt="Referencia 3" class="slider-img">
-  </div>
-</div>
 
-</section>
-
-<!-- SECCIÓN: Nuestros Programas -->
-<section id="servicios" class="programas-section">
-  <div class="container">
-    <h2>Nuestros Programas</h2>
-    <p class="intro">
-      Manejamos entrenamientos dirigidos teniendo en cuenta las necesidades de nuestros usuarios, ¡entre estos encontrarás!
-    </p>
-
-    <!-- Bloques de programas -->
-    <div class="programa-bloque" align="center">
-      <div class="programa-img">
-        <img src="imagenes/boxeo1.jpg" alt="Boxeo">
+      <div class="programa-bloque">
+        <div class="programa-img">
+          <img src="imagenes/boxeo1.jpg" alt="Boxeo">
+        </div>
+        <div class="programa-info">
+          <h3>Trabajo de fuerza y pesas</h3>
+          <p>Entrenamiento integral que combina ejercicios de fuerza, resistencia y movilidad para mejorar el rendimiento físico general.</p>
+          <p>Los beneficios incluyen:</p>
+          <ul>
+            <li>Mejora de la fuerza y resistencia muscular</li>
+            <li>Incremento de la masa muscular</li>
+            <li>Mejora de la salud ósea y articular</li>
+            <li>Mejora del metabolismo y quema de grasa</li>
+            <li>Reducción del riesgo de lesiones</li>
+          </ul>
+        </div>
       </div>
-      <div class="programa-info">
-        <h3>Trabajo de fuerza y pesas</h3>  
-        <p>Entrenamiento integral que combina ejercicios de fuerza, resistencia y movilidad para mejorar el rendimiento físico general.</p>
-        <p>Los beneficios incluyen:</p>
-        <ul>
-          <li>Mejora de la fuerza y resistencia muscular</li>
-          <li>Incremento de la masa muscular</li>
-          <li>Mejora de la salud ósea y articular</li>
-          <li>Mejora del metabolismo y quema de grasa</li>
-          <li>Reducción del riesgo de lesiones</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="programa-bloque reverse" align="center">
-      <div class="programa-img">
-        <img src="imagenes/boxeofemenino.jpg" alt="MMA">
-      </div>
-      <div class="programa-info">
-        <h3>MMA</h3>
-        <p>Aunque muchas personas asocian el MMA con competencias de alto nivel como la UFC, el entrenamiento es accesible para
-          personas de diferentes edades y niveles, y no necesariamente implica participar en peleas profesionales.</p>
-        <p>Los beneficios del entrenamiento de MMA incluyen:</p>
+      <div class="programa-bloque reverse">
+        <div class="programa-img">
+          <img src="imagenes/boxeofemenino.jpg" alt="MMA">
+        </div>
+        <div class="programa-info">
+          <h3>MMA</h3>
+          <p>Aunque muchas personas asocian el MMA con competencias de alto nivel como la UFC, el entrenamiento es accesible para
+            personas de diferentes edades y niveles, y no necesariamente implica participar en peleas profesionales.</p>
+          <p>Los beneficios del entrenamiento de MMA incluyen:</p>
           <ul>
             <li>Mejora tu condición física</li>
             <li>Desarrolla habilidades de autodefensa</li>
@@ -121,412 +123,202 @@
             <li>Mejora coordinación, equilibrio y reflejos</li>
             <li>Reducción de estrés y mejora emocional</li>
           </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="programa-bloque" align="center">
-      <div class="programa-img">
-        <img src="imagenes/acondicionamientofisico.jpg" alt="Acondicionamiento Físico">
+      <div class="programa-bloque">
+        <div class="programa-img">
+          <img src="imagenes/acondicionamientofisico.jpg" alt="Trabajo funcional">
+        </div>
+        <div class="programa-info">
+          <h3>Trabajo funcional</h3>
+          <p>Entrenamiento que mejora la fuerza, equilibrio y flexibilidad a través de movimientos naturales.</p>
+          <p>Los beneficios incluyen:</p>
+          <ul>
+            <li>Mejora de rendimiento deportivo</li>
+            <li>Adaptable a todos los niveles</li>
+            <li>Mejora de la movilidad y flexibilidad</li>
+            <li>Reducción del riesgo de lesiones</li>
+            <li>Mejora del equilibrio y coordinación</li>
+          </ul>
+        </div>
       </div>
-      <div class="programa-info">
-        <h3>Trabajo funcional</h3>
-        <p>Entrenamiento que mejora la fuerza, equilibrio y flexibilidad a través de movimientos naturales.</p>
-        <p>Los beneficios incluyen:</p>
-        <ul>
-          <li>Mejora de rendimiento deportivo</li>
-          <li>Adaptable a todos los niveles</li>
-          <li>Mejora de la movilidad y flexibilidad</li>
-          <li>Reducción del riesgo de lesiones</li>
-          <li>Mejora del equilibrio y coordinación</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="programa-bloque reverse" align="center">
-      <div class="programa-img">
-        <img src="imagenes/acondicionamientofisico2.jpg" alt="Acondicionamiento Físico">
+      <div class="programa-bloque reverse">
+        <div class="programa-img">
+          <img src="imagenes/acondicionamientofisico2.jpg" alt="Acondicionamiento Físico">
+        </div>
+        <div class="programa-info">
+          <h3>Acondicionamiento Físico</h3>
+          <p>Este tipo de entrenamiento ofrece numerosos tipos de beneficios, entre estos:</p>
+          <ul>
+            <li>Mejora de la resistencia cardiovascular</li>
+            <li>Aumento de la fuerza y tonificación muscular</li>
+            <li>Mejora tu salud mental y emocional</li>
+            <li>Reducción del estrés y mejora del bienestar mental</li>
+          </ul>
+        </div>
       </div>
-      <div class="programa-info">
-        <h3>Acondicionamiento Físico</h3>
-        <p>Este tipo de entrenamiento ofrece numerosos tipos de beneficios, entre estos:</p>
-        <ul>
-          <li>Mejora de la resistencia cardiovascular</li>
-          <li>Aumento de la fuerza y tonificación muscular</li>
-          <li>Mejora tu salud mental y emocional</li>
-          <li>Reducción del estrés y mejora del bienestar mental</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="programa-bloque" align="center">
-      <div class="programa-img">
-        <img src="imagenes/bjj.jpg" alt="Jiujitsu">
-      </div>
-      <div class="programa-info">
-        <h3>Jiujitsu</h3>
-        <p>Perfecciona tus habilidades de combate en el suelo, sumisiones y control del oponente con técnicas de Jiujitsu.</p>
-        <p>Los beneficios incluyen:</p>
-        <ul>
-          <li>Defensa personal</li>
-          <li>Incremento de la flexibilidad y movilidad</li>
-          <li>Mejora confianza y autoestima</li>
-          <li>Mejora de la concentración y disciplina</li>
-          <li>Reducción del estrés y manejo de presión</li>
-        </ul>
+      <div class="programa-bloque">
+        <div class="programa-img">
+          <img src="imagenes/bjj.jpg" alt="Jiujitsu">
+        </div>
+        <div class="programa-info">
+          <h3>Jiujitsu</h3>
+          <p>Perfecciona tus habilidades de combate en el suelo, sumisiones y control del oponente con técnicas de Jiujitsu.</p>
+          <p>Los beneficios incluyen:</p>
+          <ul>
+            <li>Defensa personal</li>
+            <li>Incremento de la flexibilidad y movilidad</li>
+            <li>Mejora confianza y autoestima</li>
+            <li>Mejora de la concentración y disciplina</li>
+            <li>Reducción del estrés y manejo de presión</li>
+          </ul>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- SECCIÓN: Planes y Horarios (ya NO está oculto) -->
+  <section id="planes" class="centrado">
+    <div class="container">
+      <h2>Planes y Horarios</h2>
+
+      <div class="planes-grid">
+        <div class="planes-texto">
+          <p>Conoce nuestros planes individuales, para pareja o grupal de máximo 4 personas. Están diseñados para ayudarte en tiempo y
+            economía, elige el mejor que se adapte a tus necesidades y objetivos.</p>
+          <p><strong>Los planes incluyen:</strong></p>
+
+          <ul class="planes-lista">
+            <li><strong>PLAN BÁSICO:</strong> 12 clases al mes</li>
+            <li>Entrenamientos regulares de MMA, boxeo y acondicionamiento.</li>
+            <li>Ideal para quienes se inician en artes marciales mixtas.</li>
+
+            <li><strong>PLAN INTERMEDIO:</strong> 16 clases al mes</li>
+            <li>Mayor intensidad y perfeccionamiento técnico.</li>
+            <li>Seguimiento básico de tu progreso físico.</li>
+
+            <li><strong>PLAN AVANZADO:</strong> 20 clases al mes</li>
+            <li>Entrenamiento completo con técnicas avanzadas.</li>
+            <li>Sparring supervisado y preparación para torneos.</li>
+          </ul>
+        </div>
+
+        <div class="imagen-zoom-container">
+          <img src="imagenes/horarios3.jpeg" alt="Horarios Club Amateur" class="imagen-zoomable">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overlay zoom -->
+  <div id="overlay" class="overlay" aria-hidden="true">
+    <img id="imagen-ampliada" src="" alt="Imagen ampliada">
   </div>
-</section>
-
-<!-- SECCIÓN: Planes y Tarifas -->
-<section id="planes" class="center" style="display:none;text-align: center;">
-  <h2>Planes y Horarios</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 24px; text-align: center;">
-    <div style="flex: 1 1 320px; min-width: 280px; max-width: 400px; margin: 0 auto;">
-      <p>Conoce nuestros planes individuales, para pareja o grupal de maximo 4 personas! Están diseñados para ayudarte en tiempo y
-        economía, elije el mejor que se adapte a tus necesidades y objetivos.</p>
-      <p>Los planes incluyen:</p>
-      <ul style="display: block; text-align: left; font-size: 1.1em; margin-bottom: 24px; text-align: center;">
-        <ul><strong>PLAN BASICO:</strong> 12 clases al mes </ul>
-          <li>Entrenamientos regulares de MMA, boxeo y acondicionamiento.</li>
-          <li>Ideal para quienes se inician en artes marciales mixtas.</li>
-        <ul><strong>PLAN INTERMEDIO:</strong> 16 clases al mes</ul>
-         <li>Mayor intensidad y perfeccionamiento técnico.</li>
-         <li>Seguimiento básico de tu progreso físico.</li>
-        <ul><strong>PLAN AVANZADO:</strong> 20 clases al mes </ul>
-          <li>Entrenamiento completo con técnicas avanzadas.</li>
-          <li>Sparring supervisado y preparación para torneos.</li>
-      </ul>
-    </div>
-
-    <!-- Imagen con efecto de zoom centrado -->
-    <div class="imagen-zoom-container" style="flex: 1 1 200px; min-width: 280px; max-width: 420px; display: flex; justify-content: center;">
-      <img src="imagenes/horarios3.jpeg" alt="Tarifas Club Amateur" class="imagen-zoomable">
-    </div>
-  </div>
-</section>
-
-    <!-- Contenedor para la imagen ampliada -->
-    <div id="overlay" class="overlay">
-      <img id="imagen-ampliada" src="" alt="Imagen ampliada">
-    </div>
 
   <!-- SECCIÓN: Formulario de inscripción -->
-<section id="inscripcion" class="centrado" align="center">
-  <h2>Formulario de inscripción</h2>
-  <form id="form-inscripcion" onsubmit="guardarDatosInscripcion(); return false;" style="max-width:400px; margin:20px auto; text-align:left;">
-    <label for="nombre-insc">Nombre:</label><br>
-    <input type="text" id="nombre-insc" name="nombre" required style="width:100%;margin-bottom:10px;"><br>
+  <section id="inscripcion" class="centrado">
+    <div class="container">
+      <h2>Formulario de inscripción</h2>
 
-    <label for="apellidos-insc">Apellidos:</label><br>
-    <input type="text" id="apellidos-insc" name="apellidos" required style="width:100%;margin-bottom:10px;"><br>
+      <form id="form-inscripcion" class="form">
+        <div class="field">
+          <label for="nombre-insc">Nombre</label>
+          <input type="text" id="nombre-insc" name="nombre" required>
+        </div>
 
-    <label for="documento-insc">Documento de identidad:</label><br>
-    <input type="text" id="documento-insc" name="documento" required style="width:100%;margin-bottom:10px;"><br>
+        <div class="field">
+          <label for="apellidos-insc">Apellidos</label>
+          <input type="text" id="apellidos-insc" name="apellidos" required>
+        </div>
 
-    <label for="edad-insc">Edad:</label><br>
-    <input type="text" id="edad-insc" name="edad" required style="width:100%;margin-bottom:10px;"><br>
+        <div class="field">
+          <label for="documento-insc">Documento de identidad</label>
+          <input type="text" id="documento-insc" name="documento" required>
+        </div>
 
-    <label for="genero-insc">Género:</label><br>
-    <select id="genero-insc" name="genero" required style="width:100%;margin-bottom:10px;">
-      <option value="">Seleccione</option>
-      <option value="masculino">Masculino</option>
-      <option value="femenino">Femenino</option>
-      <option value="otro">Otro</option>
-    </select><br>
+        <div class="field">
+          <label for="edad-insc">Edad</label>
+          <input type="text" id="edad-insc" name="edad" required>
+        </div>
 
-    <label for="telefono-insc">Teléfono:</label><br>
-    <input type="tel" id="telefono-insc" name="telefono" required style="width:100%;margin-bottom:10px;"><br>
+        <div class="field">
+          <label for="genero-insc">Género</label>
+          <select id="genero-insc" name="genero" required>
+            <option value="">Seleccione</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
 
-    <label for="objetivo-insc">Objetivo:</label><br>
-    <input type="text" id="objetivo-insc" name="objetivo" required style="width:100%;margin-bottom:15px;"><br>
+        <div class="field">
+          <label for="telefono-insc">Teléfono</label>
+          <input type="tel" id="telefono-insc" name="telefono" required>
+        </div>
 
-    <!-- Lista de patologías -->
-<div class="form-group">
-  <label for="patologias"><strong>¿Tienes alguna de estas condiciones médicas que puedan afectar tu entrenamiento?</strong></label>
-  <div id="patologias" style="margin-top: 10px;">
-    <label><input type="checkbox" name="patologias" value="Ninguna" id="ningunaPatologia"> Ninguna</label><br>
-    <label><input type="checkbox" name="patologias" value="Hipertensión" class="otraPatologia"> Hipertensión</label><br>
-    <label><input type="checkbox" name="patologias" value="Problemas cardíacos" class="otraPatologia"> Problemas cardíacos</label><br>
-    <label><input type="checkbox" name="patologias" value="Asma" class="otraPatologia"> Asma</label><br>
-    <label><input type="checkbox" name="patologias" value="Lesiones articulares" class="otraPatologia"> Lesiones articulares (rodilla, hombro, etc.)</label><br>
-    <label><input type="checkbox" name="patologias" value="Problemas de columna" class="otraPatologia"> Problemas de columna</label><br>
-    <label><input type="checkbox" name="patologias" value="Epilepsia" class="otraPatologia"> Epilepsia</label><br>
-    <label><input type="checkbox" name="patologias" value="Diabetes" class="otraPatologia"> Diabetes</label><br>
-    <label><input type="checkbox" name="patologias" value="Otra" class="otraPatologia"> Otra (especificar abajo)</label>
-  </div>
+        <div class="field">
+          <label for="objetivo-insc">Objetivo</label>
+          <input type="text" id="objetivo-insc" name="objetivo" required>
+        </div>
 
-  <!-- Campo de texto para "Otra" -->
-  <input type="text" name="otra_patologia" placeholder="Especifica otra condición médica" style="margin-top:10px; width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
-</div>
+        <div class="field">
+          <label><strong>¿Tienes alguna condición médica que pueda afectar tu entrenamiento?</strong></label>
+          <div class="checklist">
+            <label><input type="checkbox" name="patologias" value="Ninguna" id="ningunaPatologia"> Ninguna</label>
+            <label><input type="checkbox" name="patologias" value="Hipertensión" class="otraPatologia"> Hipertensión</label>
+            <label><input type="checkbox" name="patologias" value="Problemas cardíacos" class="otraPatologia"> Problemas cardíacos</label>
+            <label><input type="checkbox" name="patologias" value="Asma" class="otraPatologia"> Asma</label>
+            <label><input type="checkbox" name="patologias" value="Lesiones articulares" class="otraPatologia"> Lesiones articulares</label>
+            <label><input type="checkbox" name="patologias" value="Problemas de columna" class="otraPatologia"> Problemas de columna</label>
+            <label><input type="checkbox" name="patologias" value="Epilepsia" class="otraPatologia"> Epilepsia</label>
+            <label><input type="checkbox" name="patologias" value="Diabetes" class="otraPatologia"> Diabetes</label>
+            <label><input type="checkbox" name="patologias" value="Otra" class="otraPatologia"> Otra (especificar abajo)</label>
+          </div>
 
-<!-- Script para lógica de selección -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const ningunaCheckbox = document.getElementById('ningunaPatologia');
-    const otrasCheckboxes = document.querySelectorAll('.otraPatologia');
+          <input type="text" id="otra-patologia" name="otra_patologia" placeholder="Especifica otra condición médica">
+        </div>
 
-    // Si selecciona "Ninguna", se desmarcan las demás
-    ningunaCheckbox.addEventListener('change', () => {
-      if (ningunaCheckbox.checked) {
-        otrasCheckboxes.forEach(cb => cb.checked = false);
-      }
-    });
+        <button type="submit" class="btn">Enviar inscripción</button>
+      </form>
+    </div>
+  </section>
 
-    // Si marca cualquier otra, se desmarca "Ninguna"
-    otrasCheckboxes.forEach(cb => {
-      cb.addEventListener('change', () => {
-        if (cb.checked) {
-          ningunaCheckbox.checked = false;
-        }
-      });
-    });
-  });
-</script>
+  <!-- SECCIÓN: Contacto -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
 
-    <button type="submit" class="btn" style="width:100%;">Enviar inscripción</button>
-  </form>
-</section>
+      <p class="contacto__info">
+        📍 Dirección: Ac. 153 # 96A - 10, Suba, Bogotá<br>
+        📞 Teléfono: <a href="tel:3024221645">302 422 1645</a><br>
+        📧 Email: <a href="mailto:jhonnysuan_94@outlook.com">jhonnysuan_94@outlook.com</a>
+      </p>
 
-<!-- SECCIÓN: Selección de plan y pago -->
-<section id="seleccion-plan" class="centrado" style="display:none;">
-  <h2 class="titulo-pago">Selecciona tu plan y realiza el pago</h2>
-  <form id="form-plan" style="max-width:400px; margin:20px auto; text-align:left;">
-    <label for="plan">Elige el plan de tu interés:</label><br>
-    <select id="plan" name="plan" required style="width:100%;margin-bottom:15px;">
-      <option value="">Seleccione un plan</option>
-      <option value="basico">Plan Básico - 12 clases ($120.000)</option>
-      <option value="intermedio">Plan Intermedio - 16 clases ($160.000)</option>
-      <option value="ilimitado">Plan Ilimitado - 20 clases ($200.000)</option>
-      <option value="individual">Clase individual ($25.000)</option>
-    </select><br>
-    <button type="submit" class="btn" style="width:100%;">Ir a pagar</button>
-  </form>
-</section>
+      <div class="map-wrap">
+        <iframe
+          class="mapa"
+          src="https://www.google.com/maps?q=Ac.+153+%23+96A+-+10,+Suba,+Bogotá&output=embed"
+          width="100%" height="300"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
 
-<!-- SCRIPTS -->
-<script>
-  // Guarda datos del formulario y pasa a sección de plan
-  function guardarDatosInscripcion() {
-    const datos = {
-      nombre: document.getElementById('nombre-insc').value,
-      apellidos: document.getElementById('apellidos-insc').value,
-      documento: document.getElementById('documento-insc').value,
-      edad: document.getElementById('edad-insc').value,
-      genero: document.getElementById('genero-insc').value,
-      telefono: document.getElementById('telefono-insc').value,
-      objetivo: document.getElementById('objetivo-insc').value
-    };
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Club Amateur. Todos los derechos reservados.</p>
+      <p><a href="documentos/contrato.pdf" target="_blank">📄 Reglas del Club</a></p>
+    </div>
+  </footer>
 
-    localStorage.setItem('datosInscripcion', JSON.stringify(datos));
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-    // Muestra siguiente paso
-    document.getElementById('inscripcion').style.display = 'none';
-    document.getElementById('seleccion-plan').style.display = 'block';
-  }
-
-  // Envía a pagos.html con plan y monto
-  document.getElementById('form-plan').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const plan = document.getElementById('plan').value;
-    if (!plan) {
-      alert("Selecciona un plan antes de continuar."); 
-      return;
-    }
-
-    const monto = {
-      basico: 120000,
-      intermedio: 160000,
-      ilimitado: 200000,
-      individual: 25000
-    }[plan];
-
-    window.location.href = `pagos.html?plan=${encodeURIComponent(plan)}&monto=${monto}`;
-  });
-</script>
-
-<!-- SECCIÓN: Contacto -->
-<section id="contacto" style="text-align: center; padding: 40px 16px;">
-  <h2 style="font-size: 2em; margin-bottom: 16px;">Contacto</h2>
-  <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 24px;">
-    📍 Dirección: Ac. 153 # 96A - 10, Suba, Bogotá<br>
-    📞 Teléfono: <a href="tel:3024221645" style="color: #000; text-decoration: underline;">302 422 1645</a><br>
-    📧 Email: <a href="mailto:jhonnysuan_94@outlook.com" style="color: #000; text-decoration: underline;">jhonnysuan_94@outlook.com</a>
-  </p>
-
-  <div style="margin: 0 auto; max-width: 600px;">
-    <iframe
-      src="https://www.google.com/maps?q=Ac.+153+%23+96A+-+10,+Suba,+Bogotá&output=embed"
-      width="100%" height="300" style="border:0; border-radius: 16px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" 
-      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</section>
-
-  <footer style="background-color: #111; color: #fff; text-align: center; padding: 20px;">
-  <p>&copy; 2025 Club Amateur. Todos los derechos reservados.</p>
-   <p>
-    <a href="documentos/contrato.pdf" target="_blank">📄 Reglas del Club</a>
-   </p>
-  <p>Síguenos en nuestras redes:</p>
-  <p>
-    <a href="https://www.instagram.com/club__amateur/?utm_source=qr&igsh=MXRyb2M3cGpybXZreg%3D%3D#" target="_blank" style="color: #fff; margin: 0 10px;">
-      <i class="fab fa-instagram"></i> Instagram
-    </a>
-    <!-- a href="https://tiktok.com/" target="_blank" style="color: #fff; margin: 0 10px;">
-      <i class="fab fa-tiktok"></i> TikTok
-    </a-->
-  </p>
-</footer>
-
-  <!-- SCRIPT -->
-  <script>
-    function guardarDatos() {
-    // Guardar nombre y demás campos que ya tienes  
-    const nombre = document.getElementById("nombre").value;
-    localStorage.setItem("nombre", nombre);
-    // Agrega aquí los demás datos que ya estás guardando...
-
-    // Recolectar patologías seleccionadas
-    const patologiasSeleccionadas = [];
-    document.querySelectorAll('input[name="patologias"]:checked').forEach(cb => {
-      patologiasSeleccionadas.push(cb.value);
-    });
-
-    // Si marcaron "Otra", agregar lo que escribieron
-    const otraPatologia = document.querySelector('input[name="otra_patologia"]').value.trim();
-    if (otraPatologia !== "") {
-      patologiasSeleccionadas.push("Otra: " + otraPatologia);
-    }
-
-    // Guardar en localStorage
-    localStorage.setItem("patologias", patologiasSeleccionadas.join(", "));
-
-    // Redirigir a pago.html
-    window.location.href = "pago.html";
-  }
-  // Espera a que el DOM esté listo
-  document.addEventListener("DOMContentLoaded", function() {
-    const secciones = ["quienes-somos", "servicios", "planes", "inscripcion", "seleccion-plan", "contacto"];
-    function mostrarSeccion(id) {
-      secciones.forEach(sec => {
-        const el = document.getElementById(sec);
-        if (el) el.style.display = (sec === id) ? "block" : "none";
-      });
-    }
-    // Mostrar solo la primera sección al cargar
-    mostrarSeccion("quienes-somos");
-    // Asignar eventos a los enlaces del menú
-    document.querySelectorAll("nav a").forEach(enlace => {
-      enlace.addEventListener("click", function(e) {
-        e.preventDefault();
-        const id = this.getAttribute("href").replace("#", "");
-        mostrarSeccion(id);
-        // Opcional: cambiar el hash en la URL
-        window.location.hash = id;
-      });
-    });
-    // Si hay hash en la URL, mostrar esa sección
-    if (window.location.hash) {
-      const hash = window.location.hash.replace("#", "");
-      if (secciones.includes(hash)) {
-        mostrarSeccion(hash);
-      }
-    }
-
-    // Interceptar envío del formulario de inscripción
-    document.getElementById("form-inscripcion").addEventListener("submit", function(e) {
-      e.preventDefault();
-      mostrarSeccion("seleccion-plan");
-    });
-
-    // Manejo del formulario de plan y pago
-    document.getElementById("form-plan").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const plan = document.getElementById("plan").value;
-      let monto = "";
-      let nombrePlan = document.getElementById("plan").options[document.getElementById("plan").selectedIndex].text;
-
-      if(plan === "basico") monto = "120000";
-      if(plan === "intermedio") monto = "160000";
-      if(plan === "ilimitado") monto = "200000";
-      if(plan === "individual") monto = "25000";
-
-      const url = `pagos.html?plan=${encodeURIComponent(nombrePlan)}&monto=${monto}`;
-      window.location.href = url;
-    });
-  });
-</script>
-
-<script>
-  // Mostrar formulario al dar click en "Solicita una clase de prueba"
-  document.addEventListener("DOMContentLoaded", function() {
-    const btns = document.querySelectorAll(".btn");
-    btns.forEach(btn => {
-      if (btn.textContent.includes("Solicita una clase de prueba")) {
-        btn.addEventListener("click", function(e) {
-          e.preventDefault();
-          // Mostrar la sección de contacto
-          document.getElementById("contacto").style.display = "block";
-          // Ocultar las demás secciones
-          ["quienes-somos", "servicios", "clases"].forEach(id => {
-            const sec = document.getElementById(id);
-            if (sec) sec.style.display = "none";
-          });
-          // Opcional: cambiar el hash en la URL
-          window.location.hash = "contacto";
-          // Hacer scroll al formulario
-          setTimeout(() => {
-            document.getElementById("form-clase-prueba").scrollIntoView({behavior: "smooth"});
-          }, 100);
-        });
-      }
-    });
-  });
-</script>
-
-<script>
-  const imagenes = document.querySelectorAll('.slider-img');
-  let index = 0;
-
-  function mostrarSiguienteImagen() {
-    imagenes.forEach((img, i) => {
-      img.classList.remove('activa');
-    });
-    imagenes[index].classList.add('activa');
-    index = (index + 1) % imagenes.length;
-  }
-
-  mostrarSiguienteImagen(); // Mostrar la primera
-  setInterval(mostrarSiguienteImagen, 3000); // Cambia cada 3 segundos
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const imagenes = document.querySelectorAll('.imagen-zoomable');
-    const overlay = document.getElementById('overlay');
-    const imagenAmpliada = document.getElementById('imagen-ampliada');
-
-    imagenes.forEach(img => {
-      img.addEventListener('click', () => {
-        imagenAmpliada.src = img.src;
-        overlay.style.display = 'flex';
-      });
-    });
-
-    overlay.addEventListener('click', (e) => {
-      if (e.target !== imagenAmpliada) {
-        overlay.style.display = 'none';
-        imagenAmpliada.src = '';
-      }
-    });
-  });
-</script>
-<!-- AOS Script -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- TU JS -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
